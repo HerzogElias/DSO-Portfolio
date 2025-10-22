@@ -1,0 +1,8 @@
+nav{
+    display: flex;
+    align-items: flex-start;
+}
+
+a{
+    color: #FFFFFF;
+}
