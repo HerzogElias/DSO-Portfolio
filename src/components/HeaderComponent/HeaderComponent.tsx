@@ -1,4 +1,7 @@
-function Navbar(){
+import React from "react";
+import "./HeaderComponent.css";
+
+export default function HeaderNavbar(){
   return (
     <nav>
        <a href="#about">About me </a>
