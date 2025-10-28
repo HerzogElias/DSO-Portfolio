@@ -1,0 +1,30 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+    height: auto;
+    flex: 1;
+    padding:2rem;
+}
+
+h1 {
+    font-size: 88px;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+p{
+    color: #FFFFFF;
+}
+
+.hero-myprofile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
