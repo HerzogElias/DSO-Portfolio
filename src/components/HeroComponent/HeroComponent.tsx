@@ -1,73 +1,23 @@
 import React from "react";
 import styles from "./HeroComponent.module.css";
+import HeaderNavbar from "../../components/HeaderComponent/HeaderComponent";
 
-// ============ Hauptkomponente ============
 export default function HeroComponent() {
   return (
-    <section className={styles.hero}>
-      <div className={styles.heroContent}>
-        <HeroText />
-        <HeroImage />
+    <section>
+       <HeaderNavbar></HeaderNavbar>
+      <div className={styles.hero}>
+        <div className="hero-myprofile">
+          <h3> Hey there I`am </h3>
+          <h1> Elias Herzog</h1>
+          <p> Hallo you! I am Elias Herzog, and I`am Fullstack Developer with Spezelasation in DevSecOps.</p>
+          <button>Contact me</button>
+        </div>
+      </div>
+      <div>
       </div>
     </section>
   );
 }
 
-// ============ Unterkomponente: Textblock ============
-function HeroText() {
-  return (
-    <div className={styles.textSection}>
-      <HeroGreeting />
-      <HeroHeadline />
-      <HeroDescription />
-      <HeroCTA />
-    </div>
-  );
-}
-
-// -- Begrüßungsteil
-function HeroGreeting() {
-  return <h3>Hey there. 👋 I am</h3>;
-}
-
-// -- Name & Titel
-function HeroHeadline() {
-  return (
-    <>
-      <h1>Felix Wallke</h1>
-      <h2>DevSecOps Engineer</h2>
-    </>
-  );
-}
-
-// -- Beschreibungstext
-function HeroDescription() {
-  return (
-    <p>
-      Write some information about yourself that is IT related.
-      <br />
-      <strong>For example:</strong> Why are you passionate about coding?
-      Do you have a deep interest in games? What inspires you to improve
-      your skills?
-    </p>
-  );
-}
-
-// -- Button
-function HeroCTA() {
-  return <button className={styles.ctaButton}>Contact me</button>;
-}
-
-// ============ Unterkomponente: Bildblock ============
-function HeroImage() {
-  return (
-    <div className={styles.imageSection}>
-      <img
-        src="/path/to/profile.jpg"
-        alt="Profile portrait"
-        className={styles.profileImage}
-      />
-    </div>
-  );
-}
 

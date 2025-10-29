@@ -1,15 +1,16 @@
 import React from "react";
-import "./index.css"; 
-import HeaderNavbar from "../../components/HeaderComponent/HeaderComponent";
+import "./index.css";
 import HeroComponent from "@site/src/components/HeroComponent/HeroComponent";
 
 
 export default function Render() {
   return (
-    <div className="about-me">
-      <HeaderNavbar></HeaderNavbar>
-      <HeroComponent></HeroComponent>
-    </div>
+    <section>
+        <div className="about-me">
+         
+          <HeroComponent></HeroComponent>
+      </div>
+    </section>
   );
 }
 
