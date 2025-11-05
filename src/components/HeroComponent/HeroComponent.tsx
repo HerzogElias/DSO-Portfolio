@@ -6,7 +6,6 @@ export default function HeroComponent() {
   return (
     <section className={styles.section}>
       <HeaderNavbar />
-      
       <div className={styles.hero}>
         <div className={styles.heroContent}>
           <div className={styles.heroMyprofile}>
