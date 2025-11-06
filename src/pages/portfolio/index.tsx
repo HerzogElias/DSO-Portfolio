@@ -2,6 +2,7 @@ import React from "react";
 import "./index.css";
 import HeroComponent from "@site/src/components/HeroComponent/HeroComponent";
 import MySkills from "@site/src/components/MySkillsComponent/MySkillsComponent";
+import MyProjects from "@site/src/components/MyProjectComponent/MyProjectComponent";
 
 export default function Render() {
   return (
@@ -12,7 +13,7 @@ export default function Render() {
         </div>
       </div>
 
-        <div className="content">
+       
           <MySkills
             skills={[
               { label: "HTML", imagePath: "img/skills/HTML.png" },
@@ -26,8 +27,15 @@ export default function Render() {
               { label: "IT Security", imagePath: "img/skills/Security.png" }
             ]}
           />
-        </div>
     
+          <div className="content">
+             <MyProjects 
+              projects={[
+              { label: "HTML", imagePath: "img/skills/HTML.png" }
+            ]}
+             />
+          </div>
+        
     </section>
   );
 }
