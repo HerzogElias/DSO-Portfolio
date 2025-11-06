@@ -12,21 +12,22 @@ export default function Render() {
         </div>
       </div>
 
-      <div className="content">
-        <MySkills
-          skills={[
-            { label: "HTML", imagePath: "img/skills/HTML.png" },
-            { label: "CSS", imagePath: "img/skills/CSS.png" },
-            { label: "Docusaurus", imagePath: "img/skills/Docusaurus.png" },
-            { label: "Python", imagePath: "img/skills/Python.png" },
-            { label: "Shell scripting", imagePath: "img/skills/Terminal.png" },
-            { label: "YAML", imagePath: "img/skills/YAML.png" },
-            { label: "Container", imagePath: "img/skills/Docker.png" },
-            { label: "CI/CD with Github Actions", imagePath: "img/skills/Actions.png" },
-            { label: "IT Security", imagePath: "img/skills/Security.png" }
-          ]}
-        />
-      </div>
+        <div className="content">
+          <MySkills
+            skills={[
+              { label: "HTML", imagePath: "img/skills/HTML.png" },
+              { label: "CSS", imagePath: "img/skills/CSS.png" },
+              { label: "Docusaurus", imagePath: "img/skills/Docusaurus.png" },
+              { label: "Python", imagePath: "img/skills/Python.png" },
+              { label: "Shell scripting", imagePath: "img/skills/Terminal.png" },
+              { label: "YAML", imagePath: "img/skills/YAML.png" },
+              { label: "Container", imagePath: "img/skills/Docker.png" },
+              { label: "CI/CD with Github Actions", imagePath: "img/skills/Actions.png" },
+              { label: "IT Security", imagePath: "img/skills/Security.png" }
+            ]}
+          />
+        </div>
+    
     </section>
   );
 }
