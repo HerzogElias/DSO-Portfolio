@@ -28,13 +28,30 @@ export default function Render() {
             ]}
           />
     
-          <div className="content">
-             <MyProjects 
-              projects={[
-              { label: "HTML", imagePath: "img/skills/HTML.png" }
-            ]}
-             />
-          </div>
+<MyProjects
+  projects={[
+    {
+      label: "Minecraft Server Setup",
+      imagePath: "/img/projects/projects/Minectraft.png",
+      description: "Automated Minecraft server setup and monitoring.",
+      tags: [
+        { label: "Shell Scripting", imagePath: "img/projects/Shell.png" },
+        { label: "Docker", imagePath: "img/projects/Docker.png" },
+        { label: "YAML", imagePath: "img/projects/YAML.png" },
+      ],
+    },
+
+        {
+      label: "Juice Shop Master",
+      imagePath: "img/projects/projects/juiceshop.png",
+      description: "Challanges for finding Security Vulnerabilitys like XSS Atattcs and SQL Injections",
+      tags: [
+        { label: "Python", imagePath: "img/projects/Python.png" },
+        { label: "IT Secturity", imagePath: "img/projects/ITSec.png" },
+      ],
+    },
+  ]}
+/>
         
     </section>
   );
