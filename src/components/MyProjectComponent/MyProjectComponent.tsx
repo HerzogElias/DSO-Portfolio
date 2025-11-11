@@ -22,7 +22,7 @@ export default function MyProjects({ projects, title }: IProjectsProps) {
 
   return (
     <section className={styles.projectsSection}>
-      <h1>{title}</h1>
+      <h2>{title}</h2>
       <div className={styles.content}>
         <div className={styles.projectsContainer}>
           <ul className={styles.projectList}>
