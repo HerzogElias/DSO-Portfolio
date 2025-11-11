@@ -29,7 +29,7 @@ export default function Render() {
           />
     
 <MyProjects
-  projects={[
+  projects={[ 
     {
       label: "Minecraft Server Setup",
       imagePath: "/img/projects/projects/Minectraft.png",
@@ -51,6 +51,7 @@ export default function Render() {
       ],
     },
   ]}
+  title="My Projects"
 />
         
     </section>
