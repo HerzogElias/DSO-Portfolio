@@ -4,6 +4,7 @@ import HeroComponent from "@site/src/components/HeroComponent/HeroComponent";
 import MySkills from "@site/src/components/MySkillsComponent/MySkillsComponent";
 import MyProjects from "@site/src/components/MyProjectComponent/MyProjectComponent";
 import Contact from "@site/src/components/ContactComponent/ContactComponent";
+import Footer from "@site/src/components/FooterComponent/FooterComponent";
 
 export default function Render() {
   return (
@@ -56,6 +57,7 @@ export default function Render() {
       />
 
      <Contact></Contact>
+     <Footer></Footer>
     </section>
   );
 }
