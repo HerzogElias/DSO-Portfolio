@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom"; // <-- Wichtig!
-import styles from "./FooterComponent.module.css";
+import { Link } from "react-router-dom";
+import styles from "./Imprint.component.module.css";
 
 export default function Footer() {
     return (
@@ -10,16 +10,21 @@ export default function Footer() {
             </div>
 
             <div>
-                <span>© Elias Herzog</span>
-                <Link to="./portfolio/imprint" className={styles.link}>
+
+
+                <p>Elias Herzog<br />
+                    Zum Leppetal 11<br />
+                    51709 Marienheide</p>
+
+
+
+                <Link to="/portfolio/Imprint" className={styles.link}>
                     Legal Notice
                 </Link>
 
                 <Link to="/portfolio" className={styles.link}>
                     Home
                 </Link>
-
-
             </div>
         </section>
     );
