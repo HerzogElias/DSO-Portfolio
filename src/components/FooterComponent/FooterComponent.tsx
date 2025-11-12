@@ -11,7 +11,7 @@ export default function Footer() {
 
             <div>
                 <span>© Elias Herzog</span>
-              <Link to="/legal" className={styles.link}>
+                <Link to="/legal" className={styles.link}>
                     Legal Notice
                 </Link>
             </div>
