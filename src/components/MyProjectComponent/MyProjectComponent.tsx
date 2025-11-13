@@ -23,6 +23,17 @@ export default function MyProjects({ projects, title }: IProjectsProps) {
   return (
     <section className={styles.projectsSection}>
       <h2>{title}</h2>
+
+      <div className="content"> 
+          <div className={styles.oben}>
+
+          </div>
+      </div>
+
+      <div className={styles.unten}>
+
+      </div>
+
       <div className={styles.content}>
         <div className={styles.projectsContainer}>
           <ul className={styles.projectList}>

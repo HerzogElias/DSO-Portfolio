@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"; // <-- Wichtig!
+import Link from '@docusaurus/Link';
 import styles from "./FooterComponent.module.css";
 
 export default function Footer() {
@@ -11,7 +11,7 @@ export default function Footer() {
 
             <div>
                 <span>© Elias Herzog</span>
-                <Link to="./portfolio/imprint" className={styles.link}>
+                <Link to="imprint" className={styles.link}>
                     Legal Notice
                 </Link>
 
