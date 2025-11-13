@@ -3,115 +3,98 @@ import styles from "./MyProjectComponent.module.css";
 import { ISkillElement } from "../MySkillsComponent/MySkillsComponent";
 
 export interface IProjectElement {
-  label: string;
-  imagePath: string;
-  description: string;
-  tags?: ISkillElement[];
-  docsUrl?: string;
-  githubUrl?: string;
+    label: string;
+    imagePath: string;
+    description: string;
+    tags?: ISkillElement[];
+    docsUrl?: string;
+    githubUrl?: string;
 }
 
 export interface IProjectsProps {
-  projects: IProjectElement[];
-  title: string;
+    projects: IProjectElement[];
+    title: string;
 }
 
 export default function MyProjects({ projects, title }: IProjectsProps) {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const activeProject = projects[activeIndex];
+    const [activeIndex, setActiveIndex] = useState(0);
+    const activeProject = projects[activeIndex];
 
-  return (
-    <section className={styles.projectsSection}>
-      <h2>{title}</h2>
+    return (
+        <section className={styles.projectsSection}>
+            <h2 className={styles.title}>{title}</h2>
 
-      <div className="content"> 
-          <div className={styles.oben}>
+            <div className={styles.wrapper}>
+                <nav className={styles.projectList}>
+                    <ul>
+                        {projects.map((project, index) => (
+                            <li
+                                key={index}
+                                onClick={() => setActiveIndex(index)}
+                                className={
+                                    activeIndex === index ? styles.active : ""
+                                }
+                            >
+                                {project.label}
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
 
-          </div>
-      </div>
+                <div className={styles.content}>
+                    <div className={styles.oben}>
+                        <h3>{activeProject.label}</h3>
 
-      <div className={styles.unten}>
+                        <div className={styles.tagsRow}>
+                            {activeProject.tags?.map((tag, index) => (
+                                <img
+                                    key={index}
+                                    src={tag.imagePath}
+                                    alt={tag.label}
+                                    className={styles.tagIcon}
+                                />
+                            ))}
+                        </div>
+                    </div>
 
-      </div>
+                    <div className={styles.unten}>
+                        <img
+                            src={activeProject.imagePath}
+                            alt="project visual"
+                        />
 
-      <div className={styles.content}>
-        <div className={styles.projectsContainer}>
-          <ul className={styles.projectList}>
-            {projects.map((project, index) => (
-              <li
-                key={project.label}
-                className={
-                  index === activeIndex
-                    ? `${styles.projectListItem} ${styles.active}`
-                    : styles.projectListItem
-                }
-                onClick={() => setActiveIndex(index)}
-              >
-                {project.label}
-              </li>
-            ))}
-          </ul>
+                        <div className={styles.projectDescription}>
+                            <span>{activeProject.description}</span>
 
-          <div className={styles.projectDescription}>
-            <div className={styles.projectDetail}>
-              <h3>{activeProject.label}</h3>
+                            <div className={styles.projectLinks}>
+                                {activeProject.docsUrl && (
+                                    <a
+                                        href={activeProject.docsUrl}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <button className={styles.button}>
+                                            Dokumentation
+                                        </button>
+                                    </a>
+                                )}
 
-              <img
-                src={activeProject.imagePath}
-                alt={activeProject.label}
-                className={styles.projectImage}
-              />
-
-              <p>{activeProject.description}</p>
-
-              <div className={styles.projectDescriptionLeft}>
-                {activeProject.tags && (
-                  <div className={styles.tags}>
-                    {activeProject.tags.map((tag) => (
-                      <img
-                        key={tag.imagePath}
-                        src={tag.imagePath}
-                        alt={tag.label}
-                        className={styles.tagIcon}
-                      />
-                    ))}
-                  </div>
-                )}
-
-                <div className={styles.projectLinks}>
-                  {activeProject.githubUrl && (
-                    <a
-                      href={activeProject.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        src="img/projects/Github.png"
-                        alt="GitHub"
-                        className={styles.linkIcon}
-                      />
-                    </a>
-                  )}
-
-                  {activeProject.docsUrl && (
-                    <a
-                      href={activeProject.docsUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        src="img/projects/Documentation.png"
-                        alt="Docs"
-                        className={styles.linkIcon}
-                      />
-                    </a>
-                  )}
+                                {activeProject.githubUrl && (
+                                    <a
+                                        href={activeProject.githubUrl}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <button className={styles.button}>
+                                            GitHub
+                                        </button>
+                                    </a>
+                                )}
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+        </section>
+    );
 }
