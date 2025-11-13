@@ -9,7 +9,7 @@ export default function Footer() {
                 <img className={styles.img} src="/img/Footer/Arrow_up.png" alt="" />
             </div>
 
-            <div>
+            <div className={styles.contactContactRoutes}>
                 <span>© Elias Herzog</span>
                 <Link to="imprint" className={styles.link}>
                     Legal Notice
