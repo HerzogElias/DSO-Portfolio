@@ -37,7 +37,7 @@ export default function Render() {
             imagePath: "/img/projects/projects/Minectraft.png",
             description: "Automated Minecraft server setup and monitoring.",
             githubUrl: "https://github.com/HerzogElias/Minecraft_Server",
-            docsUrl: "https://github.com/HerzogElias/Minecraft_Server",
+            docsUrl: "/docs/projects/minecraft-server",
             tags: [
               { label: "Shell Scripting", imagePath: "img/projects/Shell.png" },
               { label: "Docker", imagePath: "img/projects/Docker.png" },
@@ -58,7 +58,7 @@ export default function Render() {
           },
           ,
           {
-            label: "Wordpress Container",
+            label: "Wordpress",
             imagePath: "/img/projects/projects/Wordpress.png",
             description: "In this project I featured a Docker Compose file, where you can deploy a Wordpress Blogging Website",
             githubUrl: "https://github.com/HerzogElias/Minecraft_Server",
