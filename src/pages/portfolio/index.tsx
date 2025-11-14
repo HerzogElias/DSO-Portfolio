@@ -36,6 +36,8 @@ export default function Render() {
             label: "Minecraft Server Setup",
             imagePath: "/img/projects/projects/Minectraft.png",
             description: "Automated Minecraft server setup and monitoring.",
+            githubUrl: "https://github.com/HerzogElias/Minecraft_Server",
+            docsUrl: "https://github.com/HerzogElias/Minecraft_Server",
             tags: [
               { label: "Shell Scripting", imagePath: "img/projects/Shell.png" },
               { label: "Docker", imagePath: "img/projects/Docker.png" },
@@ -47,17 +49,45 @@ export default function Render() {
             label: "Juice Shop Master",
             imagePath: "img/projects/projects/juiceshop.png",
             description: "Challanges for finding Security Vulnerabilitys like XSS Atattcs and SQL Injections",
+            githubUrl: "https://github.com/HerzogElias/Minecraft_Server",
+            docsUrl: "https://github.com/HerzogElias/Minecraft_Server",
             tags: [
               { label: "Python", imagePath: "img/projects/Python.png" },
               { label: "IT Secturity", imagePath: "img/projects/ITSec.png" },
             ],
           },
-        ]}
+          ,
+          {
+            label: "Wordpress Container",
+            imagePath: "/img/projects/projects/Wordpress.png",
+            description: "In this project I featured a Docker Compose file, where you can deploy a Wordpress Blogging Website",
+            githubUrl: "https://github.com/HerzogElias/Minecraft_Server",
+            docsUrl: "https://github.com/HerzogElias/Minecraft_Server",
+            tags: [
+              { label: "Shell Scripting", imagePath: "img/projects/Shell.png" },
+              { label: "Docker", imagePath: "img/projects/Docker.png" },
+            ],
+          },
+                  {
+            label: "Conduit Deployment",
+            imagePath: "img/projects/projects/Conduit.png",
+            description: "For this Fullstack Webapplication with Angular and Django, I created a Docker Compoese File and a Automatic Deployment Pipeline",
+            githubUrl: "https://github.com/HerzogElias/Minecraft_Server",
+            docsUrl: "https://github.com/HerzogElias/Minecraft_Server",
+            tags: [
+              { label: "Shell Scripting", imagePath: "img/projects/Shell.png" },
+              { label: "Docker", imagePath: "img/projects/Docker.png" },
+              { label: "YAML", imagePath: "img/projects/YAML.png" },
+              { label: "CD", imagePath: "img/projects/CD.png" },
+            ],
+          },
+        ]
+        }
         title="My Projects"
       />
 
-     <Contact></Contact>
-     <Footer></Footer>
+      <Contact></Contact>
+      <Footer></Footer>
     </section>
   );
 }
