@@ -7,7 +7,7 @@ export default function ImprintPage() {
     return (
         <section id="imprint" className="imprint">
             <div className="imprint-card">
-                <h1 className="imprint-title">Impressum</h1>
+                <h1 className="imprint-title">Imprint</h1>
                 <p className="imprint-text">
                     Elias Herzog <br />
                     Zum Leppetal 11 <br />
