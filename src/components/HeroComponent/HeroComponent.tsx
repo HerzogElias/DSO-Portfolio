@@ -15,7 +15,7 @@ export default function HeroComponent() {
               Hallo you! I am Elias Herzog, and I`m a Fullstack Developer with
               specialization in DevSecOps.
             </p>
-            <button>Contact me</button>
+            <button className={styles.button}>Contact me</button>
           </div>
           <div>
             <img src="/img/foto_elias.png" alt="Elias Herzog" />
