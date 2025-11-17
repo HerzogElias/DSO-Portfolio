@@ -49,8 +49,8 @@ export default function Render() {
             label: "Juice Shop Master",
             imagePath: "img/projects/projects/juiceshop.png",
             description: "Challanges for finding Security Vulnerabilitys like XSS Atattcs and SQL Injections",
-            githubUrl: "https://github.com/HerzogElias/Minecraft_Server",
-            docsUrl: "https://github.com/HerzogElias/Minecraft_Server",
+            githubUrl: "https://github.com/HerzogElias/OwaspJuiceShop",
+            docsUrl: "docs/projects/Juice-Shop",
             tags: [
               { label: "Python", imagePath: "img/projects/Python.png" },
               { label: "IT Secturity", imagePath: "img/projects/ITSec.png" },
@@ -61,8 +61,8 @@ export default function Render() {
             label: "Wordpress",
             imagePath: "/img/projects/projects/Wordpress.png",
             description: "In this project I featured a Docker Compose file, where you can deploy a Wordpress Blogging Website",
-            githubUrl: "https://github.com/HerzogElias/Minecraft_Server",
-            docsUrl: "https://github.com/HerzogElias/Minecraft_Server",
+            githubUrl: "https://github.com/HerzogElias/Wordpress_Docker",
+            docsUrl: "docs/projects/wordpress",
             tags: [
               { label: "Shell Scripting", imagePath: "img/projects/Shell.png" },
               { label: "Docker", imagePath: "img/projects/Docker.png" },
@@ -72,8 +72,8 @@ export default function Render() {
             label: "Conduit Deployment",
             imagePath: "img/projects/projects/Conduit.png",
             description: "For this Fullstack Webapplication with Angular and Django, I created a Docker Compoese File and a Automatic Deployment Pipeline",
-            githubUrl: "https://github.com/HerzogElias/Minecraft_Server",
-            docsUrl: "https://github.com/HerzogElias/Minecraft_Server",
+            githubUrl: "https://github.com/HerzogElias/conduit-fullstack",
+            docsUrl: "docs/projects/conduit-deployment",
             tags: [
               { label: "Shell Scripting", imagePath: "img/projects/Shell.png" },
               { label: "Docker", imagePath: "img/projects/Docker.png" },
