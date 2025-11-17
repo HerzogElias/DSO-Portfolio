@@ -61,7 +61,7 @@
 
 .content {
     width: 900px;
-    height: 500px;
+    height: 400px;
     padding: 32px;
     background: #2F4563;
     border-radius: 20px;
@@ -148,3 +148,9 @@
     transform: translateY(-3px);
 }
 
+h2 {
+  font-family: "Quicksand";
+  text-align: start;
+  font-weight: 700;
+  font-size: 42px;
+}
