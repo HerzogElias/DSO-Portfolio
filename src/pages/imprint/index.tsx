@@ -17,8 +17,20 @@ export default function ImprintPage() {
 
                 <p className="imprint-subtitle">Kontaktmöglichkeiten:</p>
                 <div className="contactContactData">
-                    <p className="imprint-text">Email: contact@elias-herzog.de</p>
-                    <p className="imprint-text">Telefon: +49 1575 3683264</p>
+    
+                    <p className="imprint-text">
+                        Email:{" "}
+                        <a href="mailto:contact@elias-herzog.de">
+                            contact@elias-herzog.de
+                        </a>
+                    </p>
+
+                    <p className="imprint-text">
+                        Telefon:{" "}
+                        <a href="tel:+4915753683264">
+                            +49 1575 3683264
+                        </a>
+                    </p>
                 </div>
             </div>
 

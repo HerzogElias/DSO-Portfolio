@@ -6,7 +6,9 @@ export default function Footer() {
     return (
         <section id="contact" className={styles.contact}>
             <div className={styles.Footer}>
-                <img className={styles.img} src="/img/Footer/Arrow_up.png" alt="" />
+                <a href="#about">
+                <img className={styles.img} src="/img/Footer/Arrow_up.png" alt="Arrow up" />
+                </a>
             </div>
 
             <div className={styles.contactContactRoutes}>

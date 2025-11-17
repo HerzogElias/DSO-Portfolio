@@ -12,7 +12,7 @@ export interface ISkillsProps {
 
 export default function MySkills({ skills }: ISkillsProps) {
   return (
-    <section id="my-skills" className={styles.mySkills}>
+    <section id="skills" className={styles.mySkills}>
       <div className={styles.innerContent}>
         <h2>MY SKILLS</h2>
         <div className={styles.skillContent}>

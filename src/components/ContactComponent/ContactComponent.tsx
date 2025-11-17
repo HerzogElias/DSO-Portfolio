@@ -16,8 +16,19 @@ export default function Contact() {
                 </div>
 
                 <div className={styles.contactContactData}>
-                    <p>Email: contact@elias-herzog.de</p>
-                    <p>Telefon: +49 1575 3683264</p>
+                    <p>
+                        Email:{" "}
+                        <a href="mailto:contact@elias-herzog.de">
+                            contact@elias-herzog.de
+                        </a>
+                    </p>
+
+                    <p>
+                        Telefon:{" "}
+                        <a href="tel:+4915753683264">
+                            +49 1575 3683264
+                        </a>
+                    </p>
                 </div>
             </div>
         </section>

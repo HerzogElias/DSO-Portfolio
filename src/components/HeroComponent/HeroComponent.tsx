@@ -4,7 +4,7 @@ import HeaderNavbar from "../../components/HeaderComponent/HeaderComponent";
 
 export default function HeroComponent() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="about">
       <HeaderNavbar />
       <div className={styles.hero}>
         <div className={styles.heroContent}>
@@ -15,7 +15,9 @@ export default function HeroComponent() {
               Hallo you! I am Elias Herzog, and I`m a Fullstack Developer with
               specialization in DevSecOps.
             </p>
-            <button className={styles.button}>Contact me</button>
+            <a href="#contact">
+              <button className={styles.button}>Contact me</button>
+            </a>
           </div>
           <div>
             <img src="/img/foto_elias.png" alt="Elias Herzog" />
