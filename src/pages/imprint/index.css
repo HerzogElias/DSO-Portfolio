@@ -64,3 +64,10 @@ flex-direction: column;
     display: flex;
     flex-direction: column;
 }
+
+h2 {
+  font-family: "Quicksand";
+  text-align: start;
+  font-weight: 700;
+  font-size: 42px;
+}
