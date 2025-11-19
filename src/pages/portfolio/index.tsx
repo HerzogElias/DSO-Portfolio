@@ -59,7 +59,7 @@ export default function Render() {
           ,
           {
             label: "Wordpress",
-            imagePath: "/img/projects/projects/Wordpress.png",
+            imagePath: "img/projects/projects/Wordpress.png",
             description: "In this project I featured a Docker Compose file, where you can deploy a Wordpress Blogging Website",
             githubUrl: "https://github.com/HerzogElias/Wordpress_Docker",
             docsUrl: "docs/projects/wordpress",

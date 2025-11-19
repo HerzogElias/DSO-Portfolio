@@ -4,7 +4,7 @@ Readme
   - [Perrquites](#perrquites)
   - [Quickstart](#quickstart)
   - [Usage](#usage)
-  - [Challanges](#challanges)
+  - [Challenges](#challenges)
   - [Disclaimer](#disclaimer)
 
 ## Perrquites 
@@ -48,10 +48,12 @@ npm start
 127.0.0.1:3000
 ```
 
-## Challanges
-- [XSS Attack](/Chalanges/XSS_Song/Readme.md)
-- [Adminlogin](/Chalanges/Admin_Login/Readme.md)
-- [Privacychalange](/Chalanges/Privacy_Policy/Readme.md)
+## Challenges
+- [XSS Attack](./Challenges/XSS_Song/Readme.md)
+- [Admin Login](./Challenges/Admin_Login/Readme.md)
+- [Privacy Challenge](./Challenges/Privacy_Policy/Readme.md)
+
+
 
 ## Disclaimer
 The vulnerabilities and exploits shown in this repository are provided strictly for educational purposes. Do not attempt to use these techniques on systems without clear and explicit authorization.

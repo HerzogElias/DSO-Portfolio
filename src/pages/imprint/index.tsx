@@ -17,7 +17,7 @@ export default function ImprintPage() {
 
                 <p className="imprint-subtitle">Kontaktmöglichkeiten:</p>
                 <div className="contactContactData">
-    
+
                     <p className="imprint-text">
                         Email:{" "}
                         <a href="mailto:contact@elias-herzog.de">
@@ -37,10 +37,9 @@ export default function ImprintPage() {
 
             <div className="contact">
                 <span>© Elias Herzog</span>
-                <Link to="imprint">
+                <Link to="/imprint">
                     Legal Notice
                 </Link>
-
                 <Link to="/portfolio">
                     Home
                 </Link>

@@ -7,13 +7,13 @@ export default function Footer() {
         <section id="contact" className={styles.contact}>
             <div className={styles.Footer}>
                 <a href="#about">
-                <img className={styles.img} src="/img/Footer/Arrow_up.png" alt="Arrow up" />
+                    <img className={styles.img} src="img/Footer/Arrow_up.png" alt="Arrow up" />
                 </a>
             </div>
 
             <div className={styles.contactContactRoutes}>
                 <span>© Elias Herzog</span>
-                <Link to="imprint" className={styles.link}>
+                <Link to="/imprint">
                     Legal Notice
                 </Link>
 
