@@ -34,7 +34,7 @@ export default function Render() {
         projects={[
           {
             label: "Minecraft Server Setup",
-            imagePath: "/img/projects/projects/Minectraft.png",
+            imagePath: "img/projects/projects/Minecraft.png",
             description: "Automated Minecraft server setup and monitoring.",
             githubUrl: "https://github.com/HerzogElias/Minecraft_Server",
             docsUrl: "/docs/projects/minecraft-server",
