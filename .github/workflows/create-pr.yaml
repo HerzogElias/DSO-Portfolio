@@ -2,10 +2,8 @@ name: Create or Update PR
 
 on:
   push:
-    branches-ignore:
-      - main
-      - master
-      - own-profile-website
+    branches:
+      - "*"
 
 permissions:
   contents: write
