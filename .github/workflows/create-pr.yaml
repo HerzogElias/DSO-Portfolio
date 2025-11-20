@@ -2,9 +2,8 @@ name: Create or Update PR
 
 on:
   push:
-    branches-ignore:
-      - main
-      - master
+    branches:
+      - "*"
 
 permissions:
   contents: write
