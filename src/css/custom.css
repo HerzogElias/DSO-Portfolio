@@ -29,6 +29,10 @@
   color: var(--ifm-color-primary);
 }
 
+.markdown a {
+  color: var(--ifm-color-primary);
+}
+
 @font-face {
   font-family: "Quicksand";
   src: url("/fonts/Quicksand/quicksand-v37-latin-regular.woff2") format("woff2");
