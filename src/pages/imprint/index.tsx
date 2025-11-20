@@ -36,7 +36,7 @@ export default function ImprintPage() {
 
 
             <div className="contact">
-                <span>© Elias Herzog</span>
+                <span className="span">© Elias Herzog</span>
                 <Link to="/imprint">
                     Legal Notice
                 </Link>
