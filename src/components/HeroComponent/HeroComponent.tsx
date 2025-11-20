@@ -20,7 +20,7 @@ export default function HeroComponent() {
             </a>
           </div>
           <div>
-            <img src="img/foto_elias.png" alt="Elias Herzog" />
+            <img src="img/foto_elias.png" alt="Elias Herzog" typeof="img" loading="lazy" />
           </div>
         </div>
       </div>
