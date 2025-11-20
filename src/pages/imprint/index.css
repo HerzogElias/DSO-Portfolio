@@ -17,7 +17,7 @@ padding: 20px;
 
 
 .imprint-card {
-background: white;
+background: rgb(200, 117, 117);
 border-radius: 20px;
 padding: 40px 50px;
 width: 800px;
@@ -70,4 +70,8 @@ h2 {
   text-align: start;
   font-weight: 700;
   font-size: 42px;
+}
+
+span{
+  color: #333 !important;
 }
