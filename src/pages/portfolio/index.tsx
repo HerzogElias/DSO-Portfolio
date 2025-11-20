@@ -37,7 +37,7 @@ export default function Render() {
             imagePath: "img/projects/projects/Minecraft.png",
             description: "Automated Minecraft server setup and monitoring.",
             githubUrl: "https://github.com/HerzogElias/Minecraft_Server",
-            docsUrl: "/docs/projects/minecraft-server",
+            docsUrl: "docs/projects/minecraft.md",
             tags: [
               { label: "Shell Scripting", imagePath: "img/projects/Shell.png" },
               { label: "Docker", imagePath: "img/projects/Docker.png" },
