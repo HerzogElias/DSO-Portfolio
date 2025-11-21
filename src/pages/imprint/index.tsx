@@ -40,7 +40,7 @@ export default function ImprintPage() {
                 <Link to="/imprint">
                     Legal Notice
                 </Link>
-                <Link to="/portfolio">
+                <Link to="/">
                     Home
                 </Link>
 

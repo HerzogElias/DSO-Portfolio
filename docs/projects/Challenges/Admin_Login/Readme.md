@@ -22,7 +22,7 @@ The vulnerabilities and exploits shown in this repository are provided strictly 
 ```
 Account-Login
 ```
-<img src="/img/Navigate_login.png"> </img>
+<img src="img/Navigate_login.png"> </img>
 
 2. Login 
 
@@ -32,6 +32,6 @@ For email use the following Command:
 ```
 Type in any password — it can be anything, just make sure the field isn't empty.
 
-<img src="/img/Login_SQLAdmin.png"> </img>
+<img src="img/Login_SQLAdmin.png"> </img>
 
 Gratulate! You are logged in as a Admin on the OWASP Juice Shop. 

@@ -17,7 +17,7 @@ export default function Footer() {
                     Legal Notice
                 </Link>
 
-                <Link to="/portfolio" className={styles.link}>
+                <Link to="/" className={styles.link}>
                     Home
                 </Link>
 
