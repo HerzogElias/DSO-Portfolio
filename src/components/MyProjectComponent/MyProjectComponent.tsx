@@ -21,7 +21,7 @@ export default function MyProjects({ projects, title }: IProjectsProps) {
     const activeProject = projects[activeIndex];
 
     return (
-        <section className={styles.projectsSection} id="s">
+        <section className={styles.projectsSection} id="projects">
             <h2 className={styles.title}>{title}</h2>
 
             <div className={styles.wrapper}>
