@@ -22,74 +22,78 @@ export default function MyProjects({ projects, title }: IProjectsProps) {
 
     return (
         <section className={styles.projectsSection} id="projects">
-            <h2 className={styles.title}>{title}</h2>
+            <div className={styles.projectContent}>
 
-            <div className={styles.wrapper}>
-                <nav className={styles.projectList}>
-                    <ul>
-                        {projects.map((project, index) => (
-                            <li
-                                key={index}
-                                onClick={() => setActiveIndex(index)}
-                                className={
-                                    activeIndex === index ? styles.active : ""
-                                }
-                            >
-                                {project.label}
-                            </li>
-                        ))}
-                    </ul>
-                </nav>
 
-                <div className={styles.content}>
-                    <div className={styles.oben}>
-                        <h3>{activeProject.label}</h3>
+                <h2 className={styles.title}>{title}</h2>
 
-                        <div className={styles.tagsRow}>
-                            {activeProject.tags?.map((tag, index) => (
-                                <img
+                <div className={styles.wrapper}>
+                    <nav className={styles.projectList}>
+                        <ul>
+                            {projects.map((project, index) => (
+                                <li
                                     key={index}
-                                    src={tag.imagePath}
-                                    alt={tag.label}
-                                    className={styles.tagIcon}
-                                />
+                                    onClick={() => setActiveIndex(index)}
+                                    className={
+                                        activeIndex === index ? styles.active : ""
+                                    }
+                                >
+                                    {project.label}
+                                </li>
                             ))}
+                        </ul>
+                    </nav>
+
+                    <div className={styles.content}>
+                        <div className={styles.oben}>
+                            <h3>{activeProject.label}</h3>
+
+                            <div className={styles.tagsRow}>
+                                {activeProject.tags?.map((tag, index) => (
+                                    <img
+                                        key={index}
+                                        src={tag.imagePath}
+                                        alt={tag.label}
+                                        className={styles.tagIcon}
+                                    />
+                                ))}
+                            </div>
                         </div>
-                    </div>
 
-                    <div className={styles.unten}>
-                        <img
-                            src={activeProject.imagePath}
-                            alt="project visual"
-                        />
+                        <div className={styles.unten}>
+                            <img
+                                src={activeProject.imagePath}
+                                alt="project visual"
+                            />
 
-                        <div className={styles.projectDescription}>
-                            <span>{activeProject.description}</span>
+                            <div className={styles.projectDescription}>
+                                <span className={styles.descriptionSpan}>{activeProject.description}</span>
 
-                            <div className={styles.projectLinks}>
-                                {activeProject.docsUrl && (
-                                    <a
-                                        href={activeProject.docsUrl}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        <button className={styles.button}>
-                                            Dokumentation
-                                        </button>
-                                    </a>
-                                )}
+                                <div className={styles.projectLinks}>
+                                    {activeProject.docsUrl && (
+                                        <a
+                                            href={activeProject.docsUrl}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <button className={styles.buttonDark}>
+                                                Dokumentation
+                                            </button>
+                                        </a>
+                                    )}
 
-                                {activeProject.githubUrl && (
-                                    <a
-                                        href={activeProject.githubUrl}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        <button className={styles.button}>
-                                            GitHub
-                                        </button>
-                                    </a>
-                                )}
+                                    {activeProject.githubUrl && (
+                                        <a
+                                            href={activeProject.githubUrl}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <button className={styles.buttonLight}>
+                                                GitHub
+                                            </button>
+                                        </a>
+                                    )}
+                                </div>
                             </div>
                         </div>
                     </div>

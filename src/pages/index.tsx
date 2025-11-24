@@ -33,7 +33,7 @@ export default function Render() {
       <MyProjects
         projects={[
           {
-            label: "Minecraft Server Setup",
+            label: "Minecraft",
             imagePath: "img/projects/projects/Minecraft.png",
             description: "Automated Minecraft server setup and monitoring.",
             githubUrl: "https://github.com/HerzogElias/Minecraft_Server",
