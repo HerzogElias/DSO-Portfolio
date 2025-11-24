@@ -21,8 +21,12 @@
   display: block;
   width: 100%;
   font-weight: 700;
-  font-size: 42px;
   color: #FFFFFF !important;
+  font-family: Quicksand;
+  font-style: Bold;
+  font-size: 64px;
+  line-height: 120%;
+  letter-spacing: 0%;
 }
 
 .skillContent {
