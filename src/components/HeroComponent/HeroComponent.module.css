@@ -21,6 +21,8 @@
 .heroContent {
     display: flex;
     gap: 2rem;
+    justify-content: space-around;
+    max-width: 1420px;
 }
 
 .heroMyprofile {
