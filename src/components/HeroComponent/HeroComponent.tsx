@@ -11,6 +11,7 @@ export default function HeroComponent() {
           <div className={styles.heroMyprofile}>
             <h3>Hey there I`m</h3>
             <h1>Elias Herzog</h1>
+            <h2>DevSecOps Engeneer</h2>
             <p>
               Hallo you! I am Elias Herzog, and I`m a Fullstack Developer with
               specialization in DevSecOps.
