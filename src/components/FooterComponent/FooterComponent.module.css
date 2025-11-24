@@ -10,31 +10,31 @@
     margin-left: calc(-50vw + 50%);
 }
 
-.img{
+.img {
     width: 40px;
     height: 100px;
 }
 
-.Footer{
-    display: flex;
-    flex-direction: column;
-}
-.contactContactRoutes{
+.Footer {
     display: flex;
     flex-direction: column;
 }
 
-.spanCopyright{
-   color: #FFFFFF !important;
+.contactContactRoutes {
+    display: flex;
+    flex-direction: column;
 }
 
-.link{
+.spanCopyright {
+    color: #FFFFFF !important;
+}
+
+.link {
     font-family: Quicksand;
-font-weight: 400;
-font-style: Regular;
-font-size: 16px;
-line-height: 120%;
-letter-spacing: 0%;
-color: #F8F5EC;
-
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #F8F5EC;
 }
