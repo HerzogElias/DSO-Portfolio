@@ -1,7 +1,8 @@
 .header {
     display: flex;
     align-items: flex-start;
-    padding: 16px;
+    padding: 106px;
+    height: 29px;
 }
 
 nav {
@@ -13,7 +14,12 @@ nav {
 }
 
 a {
+    font-family: Quicksand;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0%;
     color: #FFFFFF;
-    text-decoration: none;
-    font-weight: bold;
+
 }
