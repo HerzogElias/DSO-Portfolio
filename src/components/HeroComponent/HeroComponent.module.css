@@ -21,7 +21,7 @@
 .heroContent {
     display: flex;
     gap: 2rem;
-    justify-content: space-around;
+    justify-content: space-evenly;
     max-width: 1420px;
 }
 
