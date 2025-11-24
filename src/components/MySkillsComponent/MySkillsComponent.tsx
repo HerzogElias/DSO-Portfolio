@@ -24,7 +24,7 @@ export default function MySkills({ skills }: ISkillsProps) {
                 alt={skill.label}
                 className={styles.skillDetailImg}
               />
-              <span>{skill.label}</span>
+              <span className={styles.skillName}>{skill.label}</span>
             </div>
           ))}
         </div>
