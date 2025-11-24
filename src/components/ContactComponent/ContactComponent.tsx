@@ -7,7 +7,6 @@ export default function Contact() {
             <div className={styles.contactContainer}>
                 <div className={styles.contactWhyMe}>
                     <h2>Contact me</h2>
-                    <span>Why Me:</span>
                     <ul>
                         <li>I am Fullstack Developer</li>
                         <li>Skills also in DevSecOps</li>
@@ -18,14 +17,14 @@ export default function Contact() {
                 <div className={styles.contactContactData}>
                     <p>
                         Email:{" "}
-                        <a href="mailto:contact@elias-herzog.de">
+                        <a  className={styles.aContact} href="mailto:contact@elias-herzog.de">
                             contact@elias-herzog.de
                         </a>
                     </p>
 
                     <p>
                         Telefon:{" "}
-                        <a href="tel:+4915753683264">
+                        <a className={styles.aContact} href="tel:+4915753683264">
                             +49 1575 3683264
                         </a>
                     </p>
