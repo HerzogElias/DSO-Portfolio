@@ -12,8 +12,8 @@ export default function Footer() {
             </div>
 
             <div className={styles.contactContactRoutes}>
-                <span>© Elias Herzog</span>
-                <Link to="/imprint">
+                <span className={styles.spanCopyright}>© Elias Herzog</span>
+                <Link to="/imprint" className={styles.link}>
                     Legal Notice
                 </Link>
 
