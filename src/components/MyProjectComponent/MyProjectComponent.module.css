@@ -6,7 +6,6 @@
     gap: 40px;
     background-color: #266AD9;
     width: 100%;
-    margin-left: calc(-50vw + 50%);
 }
 
 .projectContent {
@@ -192,12 +191,10 @@
 @media screen and (max-width: 1230px) {
     .title {
         font-size: 36px;
-        margin-left: 8px;
     }
 
     .oben h3 {
         font-size: 24px;
-        margin-left: 8px;
     }
 
     .wrapper {

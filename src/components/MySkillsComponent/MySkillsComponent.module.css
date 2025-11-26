@@ -4,7 +4,6 @@
   align-items: flex-start;
   width: 100%;
   background-color: #262E34;
-  margin-left: calc(-50vw + 50%);
 }
 
 .innerContent {
@@ -66,8 +65,6 @@
 @media screen and (max-width: 1230px) {
   .innerContent h2 {
     font-size: 36px;
-    margin-left: 8px;
-    width: 100%;
   }
 
   .skillDetailImg {
@@ -77,8 +74,7 @@
   }
 
   .skillDetail {
-  width: 300px;
-  height: 130px;
-  margin-left: 8px;
-}
+    width: 300px;
+    height: 130px;
+  }
 }
