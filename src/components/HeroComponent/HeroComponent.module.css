@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    color: white;
+    color: #ffffff;
 }
 
 h1 {
@@ -39,15 +39,16 @@ h1 {
     margin: 0;
 }
 
-h2{
+h2 {
     margin: 0;
-     font-family: "Quicksand";
-     color: #FFFFFF;
+    font-family: "Quicksand";
+    color: #FFFFFF;
+    font-size: 42px;
 }
 
 h3 {
     font-family: "Quicksand";
-    font-size: 48px;
+    font-size: 36px;
     color: #ffffff;
     margin: 0;
 }
@@ -71,11 +72,36 @@ img {
     font-size: 20px;
     line-height: 120%;
     letter-spacing: 0%;
-    color:#266AD9;
+    color: #266AD9;
     width: fit-content;
     border-radius: 30px;
     gap: 10px;
     width: 130px;
     height: 52px;
     border: #FFFFFF 2px solid;
+}
+
+@media screen and (max-width: 1230px) {
+    h1 {
+        font-size: 60px;
+        margin-left: 8px;
+    }
+
+    h2 {
+        font-size: 36px;
+        margin-left: 8px;
+    }
+
+    h3 {
+        font-size: 24px;
+        margin-left: 8px;
+    }
+
+    .button {
+        margin-left: 8px;
+    }
+
+    p {
+        margin-left: 8px;
+    }
 }

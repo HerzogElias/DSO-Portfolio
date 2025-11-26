@@ -16,7 +16,7 @@
     margin: 0 auto;
     padding-top: 42px;
     padding-bottom: 42px;
-    color: white;
+    color: #FFFFFF;
 }
 
 .title {
@@ -98,7 +98,7 @@
 .oben h3 {
     margin: 0;
     font-size: 32px;
-    color: white;
+    color: #FFFFFF;
 }
 
 .tagsRow {
@@ -166,7 +166,7 @@
     border: none;
     border-radius: 40px;
     background: #266AD9;
-    color: white;
+    color: #FFFFFF;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
@@ -175,18 +175,119 @@
 }
 
 .button:hover {
-    background: #3b83ff;
+    background: #266AD9;
     transform: translateY(-3px);
-}
-
-h2 {
-    font-family: "Quicksand";
-    font-weight: 700;
-    font-size: 42px;
 }
 
 .descriptionSpan {
     display: inline-block;
     height: 70px;
     color: #FFFFFF !important;
+}
+
+.projectResponsive {
+    display: none;
+}
+
+@media screen and (max-width: 1230px) {
+    .title {
+        font-size: 36px;
+        margin-left: 8px;
+    }
+
+    .oben h3 {
+        font-size: 24px;
+        margin-left: 8px;
+    }
+
+    .wrapper {
+        display: none;
+    }
+
+    .projectResponsive {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 32px;
+        width: 100% ;
+        height: auto;
+        background-color: #262E34;
+    }
+
+    .projectContent {
+        display: none;
+    }
+
+    .projectResponsive {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .respCard {
+        background: #266AD9;
+        padding: 1.5rem;
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        width: 600px;
+        height: 500px;
+    }
+
+    .respTitle {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin: 0;
+        color: #FFFFFF;
+    }
+
+    .respTags {
+        display: flex;
+        gap: 20px;
+    }
+
+    .respTagIcon {
+        width: auto;
+        height: 35px;
+        object-fit: contain;
+    }
+
+    .respImage {
+        width: 300px;
+        border-radius: 16px;
+        margin-top: 0.4rem;
+    }
+
+    .respDescription {
+        white-space: pre-line;
+        font-size: 0.95rem;
+        line-height: 1.45;
+        color: #FFFFFF !important;
+    }
+
+    .respButtons {
+        display: flex;
+        gap: 1rem;
+        margin-top: 0.3rem;
+    }
+
+    .respButtonLight {
+        background: #FFFFFF;
+        color: #3b66d4;
+        padding: 10px 22px;
+        border-radius: 50px;
+        border: none;
+        font-weight: 600;
+    }
+
+    .respButtonOutline {
+        background: transparent;
+        color: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        padding: 10px 22px;
+        border-radius: 50px;
+        font-weight: 600;
+    }
 }

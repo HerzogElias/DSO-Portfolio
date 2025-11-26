@@ -63,3 +63,10 @@ h2 {
   letter-spacing: 0%;
   color: #FFFFFF;
 }
+
+@media screen and (max-width: 1230px) {
+  h2 {
+    font-size: 36px;
+    margin-left: 8px;
+  }
+}

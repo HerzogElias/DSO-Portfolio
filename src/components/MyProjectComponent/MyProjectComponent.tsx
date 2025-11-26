@@ -7,6 +7,7 @@ export interface IProjectElement {
     imagePath: string;
     description: string;
     tags?: ISkillElement[];
+    tagsResponsive?: ISkillElement[];
     docsUrl?: string;
     githubUrl?: string;
 }
@@ -22,9 +23,8 @@ export default function MyProjects({ projects, title }: IProjectsProps) {
 
     return (
         <section className={styles.projectsSection} id="projects">
+
             <div className={styles.projectContent}>
-
-
                 <h2 className={styles.title}>{title}</h2>
 
                 <div className={styles.wrapper}>
@@ -32,11 +32,9 @@ export default function MyProjects({ projects, title }: IProjectsProps) {
                         <ul>
                             {projects.map((project, index) => (
                                 <li
-                                    key={index}
+                                    key={project.label}
                                     onClick={() => setActiveIndex(index)}
-                                    className={
-                                        activeIndex === index ? styles.active : ""
-                                    }
+                                    className={activeIndex === index ? styles.active : ""}
                                 >
                                     {project.label}
                                 </li>
@@ -49,9 +47,9 @@ export default function MyProjects({ projects, title }: IProjectsProps) {
                             <h3>{activeProject.label}</h3>
 
                             <div className={styles.tagsRow}>
-                                {activeProject.tags?.map((tag, index) => (
+                                {activeProject.tags?.map((tag) => (
                                     <img
-                                        key={index}
+                                        key={tag.label}
                                         src={tag.imagePath}
                                         alt={tag.label}
                                         className={styles.tagIcon}
@@ -67,7 +65,9 @@ export default function MyProjects({ projects, title }: IProjectsProps) {
                             />
 
                             <div className={styles.projectDescription}>
-                                <span className={styles.descriptionSpan}>{activeProject.description}</span>
+                                <span className={styles.descriptionSpan}>
+                                    {activeProject.description}
+                                </span>
 
                                 <div className={styles.projectLinks}>
                                     {activeProject.docsUrl && (
@@ -76,9 +76,7 @@ export default function MyProjects({ projects, title }: IProjectsProps) {
                                             target="_blank"
                                             rel="noreferrer"
                                         >
-                                            <button className={styles.buttonDark}>
-                                                Dokumentation
-                                            </button>
+                                            <button className={styles.buttonDark}>Dokumentation</button>
                                         </a>
                                     )}
 
@@ -88,9 +86,7 @@ export default function MyProjects({ projects, title }: IProjectsProps) {
                                             target="_blank"
                                             rel="noreferrer"
                                         >
-                                            <button className={styles.buttonLight}>
-                                                GitHub
-                                            </button>
+                                            <button className={styles.buttonLight}>GitHub</button>
                                         </a>
                                     )}
                                 </div>
@@ -99,6 +95,55 @@ export default function MyProjects({ projects, title }: IProjectsProps) {
                     </div>
                 </div>
             </div>
+
+            <div className={styles.projectResponsive}>
+<h2 className={styles.title}>{title}</h2>
+                {projects.map((project, index) => (
+                    <div key={project.label} className={styles.respCard}>
+
+                        <h3 className={styles.respTitle}>
+                            {index + 1}. {project.label}
+                        </h3>
+
+                        <div className={styles.respTags}>
+                            {project.tagsResponsive?.map((tag) => (
+                                <img
+                                    key={tag.label}
+                                    src={tag.imagePath}
+                                    alt={tag.label}
+                                    className={styles.respTagIcon}
+                                />
+                            ))}
+                        </div>
+
+                        <img
+                            src={project.imagePath}
+                            alt={project.label}
+                            className={styles.respImage}
+                        />
+
+                        <span className={styles.respDescription}>
+                            {project.description}
+                        </span>
+
+                        <div className={styles.respButtons}>
+                            {project.docsUrl && (
+                                <a href={project.docsUrl} target="_blank" rel="noreferrer">
+                                    <button className={styles.respButtonLight}>Documentation</button>
+                                </a>
+                            )}
+
+                            {project.githubUrl && (
+                                <a href={project.githubUrl} target="_blank" rel="noreferrer">
+                                    <button className={styles.respButtonOutline}>GitHub</button>
+                                </a>
+                            )}
+                        </div>
+
+                    </div>
+                ))}
+            </div>
+
         </section>
     );
 }

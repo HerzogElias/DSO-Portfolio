@@ -15,7 +15,6 @@ export default function Render() {
         </div>
       </div>
 
-
       <MySkills
         skills={[
           { label: "HTML", imagePath: "img/skills/HTML.png" },
@@ -26,11 +25,12 @@ export default function Render() {
           { label: "YAML", imagePath: "img/skills/YAML.png" },
           { label: "Container", imagePath: "img/skills/Docker.png" },
           { label: "CI/CD with Github Actions", imagePath: "img/skills/Actions.png" },
-          { label: "IT Security", imagePath: "img/skills/Security.png" }
+          { label: "IT Security", imagePath: "img/skills/Security.png" },
         ]}
       />
 
       <MyProjects
+        title="My Projects"
         projects={[
           {
             label: "Minecraft",
@@ -43,35 +43,49 @@ export default function Render() {
               { label: "Docker", imagePath: "img/projects/Docker.png" },
               { label: "YAML", imagePath: "img/projects/YAML.png" },
             ],
+            tagsResponsive: [
+              { label: "Shell Scripting", imagePath: "img/projects/respo/Shell.png" },
+              { label: "Docker", imagePath: "img/projects/respo/Container.png" },
+              { label: "YAML", imagePath: "img/projects/respo/YAML.png" },
+            ],
           },
-
           {
             label: "Juice Shop Master",
             imagePath: "img/projects/projects/juiceshop.png",
-            description: "Challanges for finding Security Vulnerabilitys like XSS Atattcs and SQL Injections",
+            description:
+              "Challenges for finding security vulnerabilities like XSS attacks and SQL injections.",
             githubUrl: "https://github.com/HerzogElias/OwaspJuiceShop",
             docsUrl: "docs/projects/Juice-Shop",
             tags: [
               { label: "Python", imagePath: "img/projects/Python.png" },
-              { label: "IT Secturity", imagePath: "img/projects/ITSec.png" },
+              { label: "IT Security", imagePath: "img/projects/ITSec.png" },
+            ],
+            tagsResponsive: [
+              { label: "Python", imagePath: "img/projects/respo/Python.png" },
+              { label: "IT Security", imagePath: "img/projects/respo/ITSec.png" },
             ],
           },
-          ,
           {
             label: "Wordpress",
             imagePath: "img/projects/projects/Wordpress.png",
-            description: "In this project I featured a Docker Compose file, where you can deploy a Wordpress Blogging Website",
+            description:
+              "In this project I created a Docker Compose file to deploy a Wordpress blogging website.",
             githubUrl: "https://github.com/HerzogElias/Wordpress_Docker",
             docsUrl: "docs/projects/wordpress",
             tags: [
               { label: "Shell Scripting", imagePath: "img/projects/Shell.png" },
               { label: "Docker", imagePath: "img/projects/Docker.png" },
             ],
+            tagsResponsive: [
+              { label: "Shell Scripting", imagePath: "img/projects/respo/Shell.png" },
+              { label: "Docker", imagePath: "img/projects/respo/Container.png" },
+            ],
           },
-                  {
+          {
             label: "Conduit Deployment",
             imagePath: "img/projects/projects/Conduit.png",
-            description: "For this Fullstack Webapplication with Angular and Django, I created a Docker Compoese File and a Automatic Deployment Pipeline",
+            description:
+              "For this fullstack web application with Angular and Django, I created a Docker Compose file and an automatic deployment pipeline.",
             githubUrl: "https://github.com/HerzogElias/conduit-fullstack",
             docsUrl: "docs/projects/conduit-deployment",
             tags: [
@@ -80,14 +94,18 @@ export default function Render() {
               { label: "YAML", imagePath: "img/projects/YAML.png" },
               { label: "CD", imagePath: "img/projects/CD.png" },
             ],
+            tagsResponsive: [
+              { label: "Shell Scripting", imagePath: "img/projects/respo/Shell.png" },
+              { label: "Docker", imagePath: "img/projects/respo/Container.png" },
+              { label: "YAML", imagePath: "img/projects/respo/YAML.png" },
+              { label: "CD", imagePath: "img/projects/respo/CD.png" },
+            ],
           },
-        ]
-        }
-        title="My Projects"
+        ]}
       />
 
-      <Contact></Contact>
-      <Footer></Footer>
+      <Contact />
+      <Footer />
     </section>
   );
 }
