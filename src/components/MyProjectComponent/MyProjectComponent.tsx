@@ -1,20 +1,24 @@
 import React, { useState } from "react";
 import styles from "./MyProjectComponent.module.css";
-import { ISkillElement } from "../MySkillsComponent/MySkillsComponent";
+
+export interface IProjectTag {
+  label: string;
+  imagePath: string;
+}
 
 export interface IProjectElement {
-    label: string;
-    imagePath: string;
-    description: string;
-    tags?: ISkillElement[];
-    tagsResponsive?: ISkillElement[];
-    docsUrl?: string;
-    githubUrl?: string;
+  label: string;
+  imagePath: string;
+  description: string;
+  tags?: IProjectTag[];
+  tagsResponsive?: IProjectTag[];
+  docsUrl?: string;
+  githubUrl?: string;
 }
 
 export interface IProjectsProps {
-    projects: IProjectElement[];
-    title: string;
+  projects: IProjectElement[];
+  title: string;
 }
 
 export default function MyProjects({ projects, title }: IProjectsProps) {
