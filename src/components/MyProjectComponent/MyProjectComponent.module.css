@@ -206,7 +206,7 @@
         flex-direction: column;
         justify-content: flex-start;
         gap: 32px;
-        width: 100% ;
+        width: 100%;
         height: auto;
         background-color: #262E34;
     }
@@ -229,8 +229,8 @@
         display: flex;
         flex-direction: column;
         gap: 1.2rem;
-        width: 600px;
-        height: 500px;
+        width: 100%;
+        height: 580px;
     }
 
     .respTitle {
@@ -243,6 +243,7 @@
     .respTags {
         display: flex;
         gap: 20px;
+        flex-wrap: wrap;
     }
 
     .respTagIcon {
@@ -286,5 +287,15 @@
         padding: 10px 22px;
         border-radius: 50px;
         font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .respButtons {
+        flex-wrap: wrap;
+    }
+
+    .respCard{
+        height: auto;
     }
 }

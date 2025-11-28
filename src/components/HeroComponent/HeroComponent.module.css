@@ -81,6 +81,10 @@ img {
     border: #FFFFFF 2px solid;
 }
 
+.heroContentRespo{
+    display: none;
+}
+
 @media screen and (max-width: 1230px) {
     h1 {
         font-size: 60px;
@@ -93,5 +97,21 @@ img {
     h3 {
         font-size: 24px;
     }
-
 }
+
+@media screen and (max-width: 700px) {
+    .heroContent{
+        display: none;
+    }
+
+    .heroContentRespo{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width: 500px) {
+    h1{
+        font-size: 36px;
+    }
+ }
