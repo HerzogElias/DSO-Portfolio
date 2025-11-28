@@ -54,7 +54,7 @@ export default function MySkills({ skills = [] }: ISkillsProps) {
                 </ul>
               </div>
             ))}
-            <div className={styles.paginationDots}>
+ƒ            <div className={styles.paginationDots}>
               {Array.from({ length: totalPages }).map((_, pageIndex) => (
                 <div
                   key={pageIndex}

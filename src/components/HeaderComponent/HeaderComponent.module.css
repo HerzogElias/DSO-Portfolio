@@ -69,12 +69,13 @@ a {
         display: flex;
         flex-direction: column;
         padding: 20px;
-        z-index: 9999;
+        z-index: 1;
     }
 
     .navCloseImage {
         width: 30px;
         cursor: pointer;
+        z-index: 9999;
     }
 
     .navbarOpen a {

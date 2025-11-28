@@ -36,7 +36,6 @@ export default function HeaderNavbar() {
                 style={{ cursor: "pointer" }}
               />
             </div>
-            
             <nav>
               <a href="#about" onClick={() => setIsOpen(false)}>About me</a>
               <a href="#skills" onClick={() => setIsOpen(false)}>My skills</a>
