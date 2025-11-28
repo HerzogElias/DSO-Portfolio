@@ -8,7 +8,7 @@ export interface ISkillElement {
 }
 
 export interface ISkillsProps {
-  skills: ISkillElement[];
+  skills?: ISkillElement[];
 }
 
 export default function MySkills({ skills = [] }: ISkillsProps) {
@@ -30,40 +30,37 @@ export default function MySkills({ skills = [] }: ISkillsProps) {
           {skills.map((skill) => (
             <div key={skill.label} className={styles.skillDetail}>
               <img
-                src={skill.imagePath}
-                alt={skill.label}
+                src={skill.imagePath || ""}
+                alt={skill.label || ""}
                 className={styles.skillDetailImg}
               />
-              <span className={styles.skillName}>{skill.label}</span>
+              <span className={styles.skillName}>{skill.label || ""}</span>
             </div>
           ))}
         </div>
-
         <div className={styles.mobileSkillContent}>
           <div className={styles.content}>
             {visibleSkills.map((skill) => (
               <div key={skill.label} className={styles.skillDetailMobile}>
                 <img
-                  src={skill.imagePath}
-                  alt={skill.label}
+                  src={skill.imagePath || ""}
+                  alt={skill.label || ""}
                   className={styles.skillDetailImg}
                 />
                 <ul>
-                  {skill.descriptions.map((desc, i) => (
+                  {(skill.descriptions || []).map((desc, i) => (
                     <li key={i}>{desc}</li>
                   ))}
                 </ul>
               </div>
             ))}
-
             <div className={styles.paginationDots}>
               {Array.from({ length: totalPages }).map((_, pageIndex) => (
                 <div
                   key={pageIndex}
-                  className={`${styles.dot} ${currentIndex / skillsPerPage === pageIndex
-                      ? styles.activeDot
-                      : ""
-                    }`}
+                  className={`${styles.dot} ${
+                    currentIndex / skillsPerPage === pageIndex ? styles.activeDot : ""
+                  }`}
                   onClick={() => goToPage(pageIndex)}
                 />
               ))}
