@@ -11,7 +11,7 @@ export interface ISkillsProps {
   skills: ISkillElement[];
 }
 
-export default function MySkills({ skills }: ISkillsProps) {
+export default function MySkills({ skills = [] }: ISkillsProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const skillsPerPage = 3;
 
@@ -26,8 +26,6 @@ export default function MySkills({ skills }: ISkillsProps) {
     <section id="skills" className={styles.mySkills}>
       <div className={styles.innerContent}>
         <h2>MY SKILLS</h2>
-
-        {/* Desktop Ansicht */}
         <div className={styles.skillContent}>
           {skills.map((skill) => (
             <div key={skill.label} className={styles.skillDetail}>
@@ -41,7 +39,6 @@ export default function MySkills({ skills }: ISkillsProps) {
           ))}
         </div>
 
-        {/* Mobile Ansicht */}
         <div className={styles.mobileSkillContent}>
           <div className={styles.content}>
             {visibleSkills.map((skill) => (
