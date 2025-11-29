@@ -79,6 +79,7 @@ img {
     width: 130px;
     height: 52px;
     border: #FFFFFF 2px solid;
+    cursor: pointer;
 }
 
 .heroContentRespo{

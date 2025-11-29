@@ -278,6 +278,7 @@
         border-radius: 50px;
         border: none;
         font-weight: 600;
+        cursor: pointer;
     }
 
     .respButtonOutline {
@@ -287,6 +288,7 @@
         padding: 10px 22px;
         border-radius: 50px;
         font-weight: 600;
+        cursor: pointer;
     }
 }
 
