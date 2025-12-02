@@ -15,7 +15,9 @@ export default function Render() {
         </div>
       </div>
 
+      <div className="about-me">
 
+      
       <MySkills
         skills={[
           { label: "HTML", imagePath: "img/skills/HTML.png" },
@@ -85,7 +87,7 @@ export default function Render() {
         }
         title="My Projects"
       />
-
+  </div>
       <Contact></Contact>
       <Footer></Footer>
     </section>
