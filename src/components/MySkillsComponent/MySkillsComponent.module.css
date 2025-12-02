@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-.innerContent { 
+.innerContent {
   align-items: flex-start;
   margin: 0 auto;
   padding-top: 42px;
@@ -36,6 +36,7 @@
 }
 
 .skillDetail {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,7 +47,7 @@
   border-radius: 30px;
   padding: 8px;
   width: 380px;
-  height: 200px;
+  height: 240px;
 }
 
 .skillDetailImg {
@@ -61,42 +62,61 @@
   font-size: 18px;
 }
 
+.hoverDescriptionBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #507399;
+  color:#FFFFFF;
+  padding: 16px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.skillDetail:hover .hoverDescriptionBox {
+  opacity: 1;
+}
+
+.hoverDescriptionBox ul {
+  list-style: disc;
+  padding-left: 18px;
+  margin: 0;
+  text-align: left;
+  width: 100%;
+  font-size: 14px;
+}
+
+.hoverDescriptionBox li {
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
 .mobileSkillContent {
   display: none;
 }
 
+/* MEDIA QUERIES */
 @media screen and (max-width: 1230px) {
-  .innerContent h2 {
-    font-size: 36px;
-  }
-
-  .skillDetailImg {
-    width: 60px;
-    height: 60px;
-  }
-
-  .skillDetail {
-    width: 300px;
-    height: 130px;
-  }
+  .innerContent h2 { font-size: 36px; }
+  .skillDetailImg { width: 60px; height: 60px; }
+  .skillDetail { width: 300px; height: 190px; }
+  .hoverDescriptionBox { padding: 12px; }
+  .hoverDescriptionBox ul { font-size: 13px; }
 }
 
 @media screen and (max-width: 700px) {
-  .skillContent {
-    display: none;
-  }
-
- .innerContent{
-  padding-left: 1rem;;
- }
-  .mobileSkillContent {
-    display: flex;
-    width: 100%;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 2rem;
-  }
-
+  .skillContent { display: none; }
+  .innerContent{ padding-left: 1rem; }
   .mobileSkillContent {
     display: flex;
     flex-direction: column;
@@ -107,59 +127,17 @@
     border-radius: 10px;
     height: 700px;
     width: 400px;
+    margin-top: 2rem;
   }
-
-  .content {
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-  }
-
-  .skillDetailMobile {
-    width: 280px;
-    height: 150px;
-    display: flex;
-  }
-
-  .skillDetailImg {
-    width: 70px;
-    height: 70px;
-  }
-
-  .paginationDots {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 14px;
-    margin-top: 10px;
-    padding: 10px;
-  }
-
-  .dot {
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background-color: #68727E;
-    cursor: pointer;
-    transition: all 0.25s ease;
-  }
-
-  .activeDot {
-    background-color: #ffffff;
-    opacity: 1;
-    transform: scale(1.25);
-    box-shadow: 
-      0 0 4px rgba(255, 255, 255, 0.8),
-      0 0 6px rgba(255, 255, 255, 0.4);
-  }
-
-  ul{
-    width: 80%;
-  }
+  .content { display: flex; flex-direction: column; gap: 22px; }
+  .skillDetailMobile { width: 280px; height: 150px; display: flex; }
+  .skillDetailImg { width: 70px; height: 70px; }
+  .paginationDots { display: flex; justify-content: center; align-items: center; gap: 14px; margin-top: 10px; padding: 10px; }
+  .dot { width: 14px; height: 14px; border-radius: 50%; background-color: #68727E; cursor: pointer; transition: all 0.25s ease; }
+  .activeDot { background-color: #ffffff; opacity: 1; transform: scale(1.25); box-shadow: 0 0 4px rgba(255, 255, 255, 0.8), 0 0 6px rgba(255, 255, 255, 0.4); }
+  ul { width: 80%; }
 }
 
 @media screen and (max-width: 500px) {
- .mobileSkillContent{
-  width: 100%;
- }
+  .mobileSkillContent { width: 100%; }
 }
