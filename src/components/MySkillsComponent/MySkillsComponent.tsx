@@ -28,7 +28,6 @@ export default function MySkills({ skills = [] }: ISkillsProps) {
       <div className={styles.innerContent}>
         <h2>MY SKILLS</h2>
 
-        {/* DESKTOP SKILLS */}
         <div className={styles.skillContent}>
           {skills.map((skill) => (
             <div
@@ -44,7 +43,6 @@ export default function MySkills({ skills = [] }: ISkillsProps) {
               />
               <span className={styles.skillName}>{skill.label}</span>
 
-              {/* Hover Description Box */}
               {hoveredSkill === skill && (
                 <div className={styles.hoverDescriptionBox}>
                   <h3>How I used this skills</h3>
@@ -59,7 +57,6 @@ export default function MySkills({ skills = [] }: ISkillsProps) {
           ))}
         </div>
 
-        {/* MOBILE SKILLS */}
         <div className={styles.mobileSkillContent}>
           <div className={styles.content}>
             {visibleSkills.map((skill) => (
@@ -77,7 +74,6 @@ export default function MySkills({ skills = [] }: ISkillsProps) {
               </div>
             ))}
 
-            {/* Pagination Dots */}
             <div className={styles.paginationDots}>
               {Array.from({ length: totalPages }).map((_, pageIndex) => (
                 <div

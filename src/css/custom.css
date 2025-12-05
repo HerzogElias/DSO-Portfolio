@@ -13,6 +13,32 @@
   --ifm-color-primary-lightest: #3cad6e;
 }
 
+.theme-doc-markdown h1{
+  color: #101f17;
+}
+  
+[data-theme='dark'] .theme-doc-markdown h1{
+  color: #95c8ac !important;
+}
+
+.language-bash h2{
+  color: #101f17;
+}
+  
+[data-theme='dark'] .language-bash h2{
+  color: #95c8ac !important;
+}
+
+.theme-doc-markdown h3{
+  color: #101f17;
+}
+  
+[data-theme='dark'] .theme-doc-markdown h1{
+  color: #95c8ac !important;
+}
+
+
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
@@ -32,6 +58,7 @@
 .markdown a {
   color: var(--ifm-color-primary);
 }
+
 
 @font-face {
   font-family: "Quicksand";
