@@ -13,8 +13,7 @@
   flex-direction: column;
   max-width: 1420px;
   width: 100%;
-  text-align: center;
-
+  text-align: start;
 }
 
 .contactWhyMe,
@@ -31,7 +30,7 @@ ul {
   padding-left: 20px;
 }
 
-h2 {
+.titleMedium {
   display: block;
   width: 100%;
   font-weight: 700;
@@ -42,6 +41,7 @@ h2 {
   line-height: 120%;
   letter-spacing: 0%;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .aContact {
@@ -54,19 +54,23 @@ h2 {
   color: #FFFFFF;
 }
 
-.test {
+.contactFlex {
   display: flex;
   gap: 32px;
 }
 
 @media screen and (max-width: 1230px) {
-  h2 {
+  .titleMedium {
     font-size: 36px;
+  }
+
+  .contactFlex {
+    flex-direction: column;
   }
 }
 
 @media screen and (max-width: 500px) {
-  h2 {
+  .titleMedium {
     font-size: 24px;
   }
 

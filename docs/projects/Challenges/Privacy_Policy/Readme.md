@@ -24,14 +24,16 @@ Navigate:
 ```
 Account-Login-"Not jet a Customer" 
 ```
-<img src="/img/Navigate_login.png"> </img>
+
+![Example Banner](/assets/images/Navigate_login.png)
 
 2. Fill in your own Email Adress and Password 
-<img src="/img/Registration.png"> </img>
+![Example Banner](/assets/images/Registration.png)
 
 3. Login with your created Account. Alternative you can use the Admin Account from your SQL Admin Attack. 
 
 4. Navigate to Acount-Privacy&Security -Privacy Policy 
-<img src="/img/navigation_privacy.png>"> </img>
+![Example Banner](/assets/images/navigation_privacy.png)
+
 
 You got it ! 

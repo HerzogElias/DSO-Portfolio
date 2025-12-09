@@ -9,10 +9,10 @@ export default function HeroComponent() {
       <div className={styles.hero}>
         <div className={styles.heroContent}>
           <div className={styles.heroMyprofile}>
-            <h3>Hey there I`m</h3>
-            <h1>Elias Herzog</h1>
-            <h2>DevSecOps Engineer</h2>
-            <p>
+            <h3 className={styles.titleSmall}>Hey there I`m</h3>
+            <h1 className={styles.titleBig}>Elias Herzog</h1>
+            <h2 className={styles.titleMedium}>DevSecOps Engineer</h2>
+            <p className={styles.pLine}>
               Hallo you! I am Elias Herzog, and I`m a Fullstack Developer with
               specialization in DevSecOps.
             </p>
@@ -24,19 +24,19 @@ export default function HeroComponent() {
             <img src="img/foto_elias.png" alt="Elias Herzog" />
           </div>
         </div>
-        
+
         <div className={styles.heroContentRespo}>
           <div className={styles.heroMyprofile}>
-            <h3>Hey there I`m</h3>
-            <h1>Elias Herzog</h1>
-            <h2>DevSecOps Engineer</h2>
+            <h3 className={styles.titleSmall}>Hey there I`m</h3>
+            <h1 className={styles.titleBig}>Elias Herzog</h1>
+            <h2 className={styles.titleMedium}>DevSecOps Engineer</h2>
 
 
             <div>
-              <img src="img/foto_elias.png" alt="Elias Herzog" />
+              <img className={styles.images} src="img/foto_elias.png" alt="Elias Herzog" />
             </div>
 
-            <p>
+            <p className={styles.pLine}>
               Hallo you! I am Elias Herzog, and I`m a Fullstack Developer with
               specialization in DevSecOps.
             </p>

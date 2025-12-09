@@ -5,9 +5,9 @@ export default function Contact() {
     return (
         <section id="contact" className={styles.contact}>
             <div className={styles.contactContainer}>
-                <h2>Contact me</h2>
+                <h2 className={styles.titleMedium}>Contact me</h2>
                 <div className={styles.contactWhyMe}>
-                    <div className={styles.test}>
+                    <div className={styles.contactFlex}>
 
                     <ul>
                         <li>I am Fullstack Developer</li>

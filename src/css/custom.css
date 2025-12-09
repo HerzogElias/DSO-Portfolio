@@ -13,31 +13,6 @@
   --ifm-color-primary-lightest: #3cad6e;
 }
 
-.theme-doc-markdown h1{
-  color: #101f17;
-}
-  
-[data-theme='dark'] .theme-doc-markdown h1{
-  color: #95c8ac !important;
-}
-
-.language-bash h2{
-  color: #101f17;
-}
-  
-[data-theme='dark'] .language-bash h2{
-  color: #95c8ac !important;
-}
-
-.theme-doc-markdown h3{
-  color: #101f17;
-}
-  
-[data-theme='dark'] .theme-doc-markdown h1{
-  color: #95c8ac !important;
-}
-
-
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
@@ -51,9 +26,6 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-:root span {
-  color: var(--ifm-color-primary);
-}
 
 .markdown a {
   color: var(--ifm-color-primary);

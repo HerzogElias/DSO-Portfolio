@@ -17,7 +17,7 @@
   width: 100%;
 }
 
-.innerContent h2 {
+.titleMedium {
   display: block;
   width: 100%;
   font-weight: 700;
@@ -112,7 +112,7 @@
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1230px) {
-  .innerContent h2 {
+  .titleMedium {
     font-size: 36px;
   }
   .skillDetailImg {

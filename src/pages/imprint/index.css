@@ -25,11 +25,11 @@
   gap: 10px;
 }
 
-.imprint-title {
+.titleMedium {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #1a1a1a;
+  color: #FFFFFF;
 }
 
 .imprint-subtitle {
@@ -57,10 +57,10 @@
 .contact {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;     /* links */
+  align-items: flex-start;    
 }
 
-h2 {
+.titleMedium {
   font-family: "Quicksand";
   font-weight: 700;
   font-size: 42px;

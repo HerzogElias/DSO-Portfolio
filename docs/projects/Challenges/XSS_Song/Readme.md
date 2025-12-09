@@ -22,7 +22,8 @@ The vulnerabilities and exploits shown in this repository are provided strictly 
 
 ## Descrition of Solution: 
 1. Navigate to Serchnavigation: 
-<img src="/img/XSS_Suchleiste.png"> </img>
+![Example Banner](/assets/images/XSS_Suchleiste.png)
+
 
 2. Put this following Iframe on the Search Field: 
 ```bash

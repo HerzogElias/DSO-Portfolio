@@ -7,11 +7,11 @@ export default function HeaderNavbar() {
   return (
     <>
       <div className={styles.header}>
-        <nav>
-          <a href="#about">About me</a>
-          <a href="#skills">My skills</a>
-          <a href="#projects">My projects</a>
-          <a href="#contact">Contact</a>
+        <nav className={styles.navElement}>
+          <a className={styles.aLink} href="#about">About me</a>
+          <a className={styles.aLink} href="#skills">My skills</a>
+          <a className={styles.aLink} href="#projects">My projects</a>
+          <a className={styles.aLink} href="#contact">Contact</a>
         </nav>
       </div>
 
@@ -36,11 +36,11 @@ export default function HeaderNavbar() {
                 style={{ cursor: "pointer" }}
               />
             </div>
-            <nav>
-              <a href="#about" onClick={() => setIsOpen(false)}>About me</a>
-              <a href="#skills" onClick={() => setIsOpen(false)}>My skills</a>
-              <a href="#projects" onClick={() => setIsOpen(false)}>My projects</a>
-              <a href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
+            <nav className={styles.navElement}>
+              <a className={styles.aLink} href="#about" onClick={() => setIsOpen(false)}>About me</a>
+              <a className={styles.aLink} href="#skills" onClick={() => setIsOpen(false)}>My skills</a>
+              <a className={styles.aLink} href="#projects" onClick={() => setIsOpen(false)}>My projects</a>
+              <a className={styles.aLink} href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
             </nav>
           </div>
         )}

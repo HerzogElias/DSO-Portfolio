@@ -32,34 +32,34 @@
     color: #ffffff;
 }
 
-h1 {
+.titleBig {
     font-family: "Quicksand";
     font-size: 88px;
     color: #ffffff;
     margin: 0;
 }
 
-h2 {
+.titleMedium {
     margin: 0;
     font-family: "Quicksand";
     color: #FFFFFF;
     font-size: 42px;
 }
 
-h3 {
+.titleSmall {
     font-family: "Quicksand";
     font-size: 36px;
     color: #ffffff;
     margin: 0;
 }
 
-p {
+.pLine {
     font-family: "Quicksand";
     color: #ffffff;
     max-width: 500px;
 }
 
-img {
+.images{
     width: 300px;
     height: auto;
     border-radius: 12px;
@@ -82,37 +82,38 @@ img {
     cursor: pointer;
 }
 
-.heroContentRespo{
+.heroContentRespo {
     display: none;
 }
 
 @media screen and (max-width: 1230px) {
-    h1 {
+    .titleBig {
         font-size: 60px;
     }
 
-    h2 {
+    .titleMedium {
         font-size: 36px;
     }
 
-    h3 {
+    .titleSmall {
         font-size: 24px;
     }
 }
 
 @media screen and (max-width: 700px) {
-    .heroContent{
+    .heroContent {
         display: none;
     }
 
-    .heroContentRespo{
+    .heroContentRespo {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
     }
 }
+
 @media screen and (max-width: 500px) {
-    h1{
+    .titleBig {
         font-size: 36px;
     }
- }
+}
