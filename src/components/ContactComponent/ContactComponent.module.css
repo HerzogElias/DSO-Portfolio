@@ -28,6 +28,7 @@ ul {
   list-style-type: circle;
   text-align: start;
   padding-left: 20px;
+  margin-top: 16px;
 }
 
 .titleMedium {
@@ -40,6 +41,7 @@ ul {
   font-size: 64px;
   line-height: 120%;
   letter-spacing: 0%;
+  margin-top: 25px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -54,9 +56,18 @@ ul {
   color: #FFFFFF;
 }
 
+.contactContactDataDetail{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px
+}
+
 .contactFlex {
   display: flex;
-  gap: 32px;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15vw; 
 }
 
 @media screen and (max-width: 1230px) {
@@ -66,6 +77,7 @@ ul {
 
   .contactFlex {
     flex-direction: column;
+     gap: 0px; 
   }
 }
 

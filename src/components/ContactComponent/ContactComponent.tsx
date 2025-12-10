@@ -17,19 +17,19 @@ export default function Contact() {
 
 
                     <div className={styles.contactContactData}>
-                        <p>
-                            Email:{" "}
+                        <div className={styles.contactContactDataDetail}>
+                            <img src="img/contact/mail.png" alt="mail" />
                             <a className={styles.aContact} href="mailto:contact@elias-herzog.de">
                                 contact@elias-herzog.de
                             </a>
-                        </p>
+                        </div>
 
-                        <p>
-                            Telefon:{" "}
-                            <a className={styles.aContact} href="tel:+4915753683264">
-                                +49 1575 3683264
+                        <div className={styles.contactContactDataDetail}>
+                            <img src="img/contact/linkedin.png" alt="" />
+                            <a className={styles.aContact} href="https://www.linkedin.com/in/elias-herzog-2b865728a/"  target="_blank">
+                                Profile Page
                             </a>
-                        </p>
+                        </div>
                     </div>
                 </div>
                 </div>

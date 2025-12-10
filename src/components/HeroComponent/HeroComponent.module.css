@@ -80,6 +80,13 @@
     height: 52px;
     border: #FFFFFF 2px solid;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover{
+    background-color: rgb(95, 73, 47);
+     color: white; 
+    transform: scale(1.05);
 }
 
 .heroContentRespo {
