@@ -10,9 +10,9 @@ dotenvconfig();
 const blogEnabled = Boolean(process.env.BLOG_ENABLED === 'true')
 
 const config: Config = {
-  title: 'DSO Live Demo Docs',
+  title: 'My Portfolio',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/foto_elias.png',
 
   // Set the production url of your site here
   url: process.env.DEPLOYMENT_URL ?? "https://herzogelias.github.io",
