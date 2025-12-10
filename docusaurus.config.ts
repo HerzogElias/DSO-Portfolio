@@ -13,7 +13,7 @@ const config: Config = {
   favicon: 'img/foto_elias.png',
 
   // Set the production url of your site here
-  url: process.env.DEPLOYMENT_URL ?? "https://spmse.github.io",
+  url: process.env.DEPLOYMENT_URL ?? "https://herzogelias.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: process.env.BASE_URL ?? "/",
@@ -45,7 +45,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/spmse/dev-blog-template',
+            'https://github.com/HerzogElias/DSO-Portfolio/',
         },
         blog: blogEnabled ? 
           {
@@ -57,7 +57,7 @@ const config: Config = {
             // Please change this to your repo.
             // Remove this to remove the "edit this page" links.
             editUrl:
-              'https://github.com/spmse/dev-blog-template',
+              'https://github.com/HerzogElias/DSO-Portfolio/',
             // Useful options to enforce blogging best practices
             onInlineTags: 'warn',
             onInlineAuthors: 'warn',
@@ -88,7 +88,7 @@ const config: Config = {
           label: 'Docs',
         },
         {
-          href: 'https://github.com/spmse/dev-blog-template',
+          href: 'https://github.com/HerzogElias/DSO-Portfolio/',
           label: 'Github',
           position: 'right',
         },
