@@ -49,9 +49,9 @@ npm start
 ```
 
 ## Challenges
-- [XSS Attack](./Challenges/XSS_Song/Readme.md)
-- [Admin Login](./Challenges/Admin_Login/Readme.md)
-- [Privacy Challenge](./Challenges/Privacy_Policy/Readme.md)
+- [XSS Attack](./XSS_Song/Readme.md)
+- [Admin Login](./Admin_Login/Readme.md)
+- [Privacy Challenge](./Privacy_Policy/Readme.md)
 
 
 
