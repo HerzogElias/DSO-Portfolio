@@ -1,3 +1,4 @@
+
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
@@ -9,8 +10,9 @@ dotenvconfig();
 const blogEnabled = Boolean(process.env.BLOG_ENABLED === 'true')
 
 const config: Config = {
-  title: 'My Docusaurus Blog',
-  favicon: 'img/foto_elias.png',
+  title: 'DSO Live Demo Docs',
+  tagline: 'Dinosaurs are cool',
+  favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
   url: process.env.DEPLOYMENT_URL ?? "https://spmse.github.io",
