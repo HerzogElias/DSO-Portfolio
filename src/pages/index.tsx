@@ -110,7 +110,7 @@ export default function Render() {
             imagePath: "img/projects/projects/Minecraft.png",
             description: "Automated Minecraft server setup and monitoring.",
             githubUrl: "https://github.com/HerzogElias/Minecraft_Server",
-            docsUrl: "docs/projects/minecraft-server",
+            docsUrl: "docs/projects/Minecraft-Server",
             tags: [
               { label: "Shell Scripting", imagePath: "img/projects/Shell.png" },
               { label: "Docker", imagePath: "img/projects/Docker.png" },
@@ -144,7 +144,7 @@ export default function Render() {
             description:
               "In this project I created a Docker Compose file to deploy a Wordpress blogging website.",
             githubUrl: "https://github.com/HerzogElias/Wordpress_Docker",
-            docsUrl: "docs/projects/wordpress",
+            docsUrl: "docs/projects/Wordpress",
             tags: [
               { label: "Shell Scripting", imagePath: "img/projects/Shell.png" },
               { label: "Docker", imagePath: "img/projects/Docker.png" },
@@ -160,7 +160,7 @@ export default function Render() {
             description:
               "For this fullstack web application with Angular and Django, I created a Docker Compose file and an automatic deployment pipeline.",
             githubUrl: "https://github.com/HerzogElias/conduit-fullstack",
-            docsUrl: "docs/projects/conduit-deployment",
+            docsUrl: "docs/projects/Conduit-Deployment",
             tags: [
               { label: "Shell Scripting", imagePath: "img/projects/Shell.png" },
               { label: "Docker", imagePath: "img/projects/Docker.png" },

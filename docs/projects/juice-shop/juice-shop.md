@@ -1,59 +1,60 @@
-Readme 
-# Table of Contents 
+# Table of Contents
+
 - [Table of Contents](#table-of-contents)
-  - [Perrquites](#perrquites)
+  - [Prerequisites](#prerequisites)
   - [Quickstart](#quickstart)
   - [Usage](#usage)
   - [Challenges](#challenges)
   - [Disclaimer](#disclaimer)
 
-## Perrquites 
-Internet Browser 
+## Prerequisites
 
+Internet Browser
 
-## Quickstart 
-1. Open the Following Link on your Browser: 
-```bash
+## Quickstart
+
+1.  Open the following link in your browser:
+``` bash
 https://juice-shop.herokuapp.com/#/
 ```
 
+## Usage
 
-## Usage 
-You can also Start your own Owasp Juice Shop Instance on your Compouter. 
+You can also start your own OWASP Juice Shop instance on your computer.
 
-1. Install Perequireties 
+1.  Install prerequisites:
 ``` bash
 sudo apt install nodejs npm
 ```
 
-1. Clone the following Repository 
+2.  Clone the following repository:
 ``` bash
 git clone https://github.com/juice-shop/juice-shop.git
 ```
 
-
-2. Navigate to the Correct Directory. 
-```bash
+3.  Navigate to the correct directory:
+``` bash
 cd juice-shop
 ```
 
-
-3. Start the Juice Shop 
+4.  Start the Juice Shop:
 ``` bash
-npm start 
+npm start
 ```
 
-4. Open your Juice Shop on your Browser with:
-```bash
+5.  Open your Juice Shop in your browser via:
+``` bash
 127.0.0.1:3000
 ```
 
 ## Challenges
-- [XSS Attack](./XSS_Song/Readme.md)
-- [Admin Login](./Admin_Login/Readme.md)
-- [Privacy Challenge](./Privacy_Policy/Readme.md)
 
-
+-   [XSS Attack](./XSS_Song/Readme.md)
+-   [Admin Login](./Admin_Login/Readme.md)
+-   [Privacy Challenge](./Privacy_Policy/Readme.md)
 
 ## Disclaimer
-The vulnerabilities and exploits shown in this repository are provided strictly for educational purposes. Do not attempt to use these techniques on systems without clear and explicit authorization.
+
+The vulnerabilities and exploits shown in this repository are provided
+strictly for educational purposes. Do not attempt to use these
+techniques on systems without clear and explicit authorization.

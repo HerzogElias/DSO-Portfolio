@@ -1,22 +1,22 @@
 # Minecraft Server 
 
-1. [Description](#Description)  
-2. [Prerequisites](#Prerequisites)  
-3. [Quickstart](#Quickstart)  
-4. [Usage](#Usage)  
+1. [Description](#description)  
+2. [Prerequisites](#prerequisites)  
+3. [Quickstart](#quickstart)  
+4. [Usage](#usage)  
 
-## Descripton
-This is a Description of a Own created Minecraft Server. 
-This Minecraft Server is doploled by a Docker Container with Docker Compose. 
+## Description
+This is a description of a self-created Minecraft Server. 
+This Minecraft Server is deployed by a Docker container with Docker Compose. 
 
 
 ## Prerequisites
-Docker 
-Docker Compose 
+- Docker 
+- Docker Compose 
 
 
 ## Quickstart 
-1. Clone the github Project: 
+1. Clone the Github project: 
 ```bash
 git clone git@github.com:HerzogElias/Minecraft_Server.git
 ```
@@ -26,30 +26,30 @@ git clone git@github.com:HerzogElias/Minecraft_Server.git
 wget https://piston-data.mojang.com/v1/objects/6bce4ef400e4efaa63a13d5e6f6b500be969ef81/server.jar
 ```
 
-3. Copy your Donwolad on your Root Directory of your Project. 
+3. Copy your download to the root directory of your project. 
 ```bash
 cp server.jar ./Minecraft_Server
 ```
 
-4. Navigate to the correct Directory: 
+4. Navigate to the correct directory: 
 ```bash
 cd /Minecraft_Server
 ```
 
-5. Start the Building with Docker Compose: 
+5. Start the build with Docker Compose: 
 ```bash
 docker compose up --build 
 ```
 
 ## Usage
-### Check Sever Heatly Connection: 
-Check your Minecraft Server Status with the following command: 
+### Check Server Health Connection: 
+Check your Minecraft Server status with the following command: 
 ```bash
 mcstatus localhost:8888 status
 ```
 
-### Configurateion of your Minecraft Server 
-You can configurate your Server on the server.properties File: 
+### Configuration of your Minecraft Server 
+You can configure your server in the server.properties file: 
 ```bash
 motd
 level-name
@@ -74,7 +74,7 @@ enable-rcon
 rcon.password
 ```
 
-If you dont configurate your own Server Properties, you have s Default Configuration. 
+If you don't configure your own server properties, you have a default configuration. 
 ```bash
 motd=A Minecraft Server
 level-name=world

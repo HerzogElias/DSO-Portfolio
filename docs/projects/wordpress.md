@@ -8,16 +8,16 @@
   - [Prerequisites](#prerequisites)
   - [Quickstart](#quickstart)
   - [Usage](#usage)
-    - [Login-To-Adminpanel](#login-to-adminpanel)
-    - [Stop-Container:](#stop-container)
-    - [Start Container in Detach Mode:](#start-container-in-detach-mode)
+    - [Login to Admin Panel](#login-to-admin-panel)
+    - [Stop Container](#stop-container)
+    - [Start Container in Detach Mode](#start-container-in-detach-mode)
 
 ## Description 
-This is a Reademe Description of a Docker based Wordpress Website. 
+This is a README description of a Docker-based Wordpress website. 
 
 ## Prerequisites 
--Docker 
--Docker Compose 
+- Docker 
+- Docker Compose 
 
 ## Quickstart 
 1. Clone the following Github Repository: 
@@ -25,48 +25,49 @@ This is a Reademe Description of a Docker based Wordpress Website.
 git clone git@github.com:HerzogElias/Wordpress_Docker.git
 ```
 
-2. Navigate to the Correct Directory: 
+2. Navigate to the correct directory: 
 ```bash
 cd /Wordpress_Docker
 ```
-3. Copy your env File: 
+
+3. Copy your env file: 
 ```bash
-cp example.env env 
+cp example.env .env 
 ```
 
-3. Run your Docker Image with Docker Compose: 
+4. Run your Docker image with Docker Compose: 
 ```bash
 docker compose up --build
 ```
 
-4. Navigate to your Wortpress Site on your Browser: 
+5. Navigate to your Wordpress site in your browser: 
 ```bash
 <your-ip:8080>
 ```
 
 ## Usage 
-### Login-To-Adminpanel
+### Login to Admin Panel
 1. Navigate to your Wordpress Admin Panel: 
 ```bash
 <your-ip:8080/admin>
 ```
 
 2. Login to the Admin Panel. 
-In your Docker Compose File you can find Login Data: 
+In your Docker Compose file you can find login data: 
 ```bash
       - WORDPRESS_USERNAME              
       - WORDPRESS_PASSWORD
       - WORDPRESS_EMAIL
 ```
 
-### Stop-Container: 
-You can stop the container with the following Command: 
+### Stop Container
+You can stop the container with the following command: 
 ```bash
 docker compose down 
 ```
 
-### Start Container in Detach Mode: 
-To Start the Container in Detach Mode use this following Command: 
+### Start Container in Detach Mode
+To start the container in detach mode use the following command: 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```

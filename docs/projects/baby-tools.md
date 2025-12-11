@@ -6,10 +6,10 @@
   - [Introduction](#introduction)
   - [Prerequisites](#prerequisites)
   - [Quickstart](#quickstart)
-    - [Clone-github-Repository](#clone-github-repository)
-    - [Build-Dockerimage](#build-dockerimage)
+    - [Clone Github Repository](#clone-github-repository)
+    - [Build Docker Image](#build-docker-image)
   - [Usage](#usage)
-    - [Creating-Superuser](#creating-superuser)
+    - [Creating Superuser](#creating-superuser)
     - [Hints](#hints)
     - [Photos](#photos)
         - [Home Page with login](#home-page-with-login)
@@ -20,51 +20,51 @@
         - [Login Page](#login-page)
 
 ## Introduction 
-This is a Readme Description of our Baby-Tools-Project. The Baby-Tools-Project is an Onlineshop for Babytools and Baby Clothes. 
+This is a README description of our Baby-Tools-Project. The Baby-Tools-Project is an online shop for baby tools and baby clothes. 
 
 ## Prerequisites
-To Deploy your Baby-Tools-Shop, you need the following: 
+To deploy your Baby-Tools-Shop, you need the following: 
 - VServer with Ubuntu
 - Python 3.9
 - Docker 
 
 ## Quickstart
-### Clone-github-Repository  
+### Clone Github Repository  
 1. Clone the following Github Repository on your VServer. 
-    ```
+```
     https://github.com/HerzogElias/baby-tools-shop/
-    ```
-### Build-Dockerimage 
-1.  Build your Docker Image 
-    ```
+```
+### Build Docker Image 
+1.  Build your Docker image 
+```
     docker build -t babyshop_app ./babyshop_app/  
-    ```
+```
 
-2.  Run your Build Docker image 
-    ```
-    docker run -it --rm --name babytoolsshop -p 8025:8000 babyshopp_app
-    ```
+2.  Run your built Docker image 
+```
+    docker run -it --rm --name babytoolsshop -p 8025:8000 babyshop_app
+```
 ## Usage 
 
-### Creating-Superuser
-1. Go to Docker exec in your Docker Container with 
-    ```
-        docker exec <container-id> bin/bash
-    ```
+### Creating Superuser
+1. Go to Docker exec in your Docker container with 
+```
+    docker exec <container-id> /bin/bash
+```
 
-2. Create a new Superuser for Django Admin Panel: 
-    ```
+2. Create a new superuser for Django Admin Panel: 
+```
     python manage.py createsuperuser
-    ```
-    Added a username and a safty password and safe. 
+```
+    Add a username and a secure password and save. 
 
-3. Navigate to Django Admin Panel and Log in with your Created Superuser Account. 
-    ```
+3. Navigate to Django Admin Panel and log in with your created superuser account. 
+```
     <localhost>/admin
-    ```
+```
 
 ### Hints
-This section will cover some hot tips when trying to interacting with this repository:
+This section will cover some hot tips when trying to interact with this repository:
 
 - Settings & Configuration for Django can be found in `babyshop_app/babyshop/settings.py`
 - Routing: Routing information, such as available routes can be found from any `urls.py` file in `babyshop_app` and corresponding subdirectories
@@ -90,4 +90,4 @@ This section will cover some hot tips when trying to interacting with this repos
 
 ##### Login Page
 
-<img alt="" src="https://github.com/MET-DEV/Django-E-Commerce/blob/master/project_images/capture_202203230810"> </img>
+<img alt="" src="https://github.com/MET-DEV/Django-E-Commerce/blob/master/project_images/capture_202203230810"></img>

@@ -1,5 +1,4 @@
 # Conduit Fullstack Project
-
 ## Table of Contents
 - [Conduit Fullstack Project](#conduit-fullstack-project)
   - [Table of Contents](#table-of-contents)
@@ -11,66 +10,53 @@
     - [Description Fullstack Project](#description-fullstack-project)
     - [Stop Docker Container](#stop-docker-container)
     - [Delete Docker Container](#delete-docker-container)
-
 ## Introduction
-This is a Readme Description of our Conduit Project.The Conduit is a Clone of The Conduit is a Clone of [Medium.com](https://medium.com/)
-
-
+This is a README description of our Conduit Project. The Conduit is a clone of [Medium.com](https://medium.com/)
 ## Prerequisites
 - Docker 
 - Docker Compose 
-
 ## Quickstart
 1. Clone the following Git Repository: 
 ```bash
 git clone git@github.com:HerzogElias/conduit-fullstack.git
 ```
-
-
-2. Navigate to the Correct Direcotry: 
+2. Navigate to the correct directory: 
 ```bash
 cd conduit-fullstack
 ```
-
-3. Clone all Submodules 
+3. Clone all submodules 
 ```bash
 git submodule update --init --recursive
 ```
-
-4. Copy your Backend Environement file.
-Naviagte: 
+4. Copy your backend environment file.
+Navigate: 
 ```bash
 cd backend
 ```
-
-Copy the File: 
+Copy the file: 
 ```bash
 cp example.env .env
 ```
-
-Navigate Back to Root: 
+Navigate back to root: 
 ```bash
 cd ..
 ```
-
 5. Start Docker Compose 
 ```bash
 docker compose up --build
 ```
-
 ## Usage 
 ### CI/CD Pipeline
-This Project are using a CI and CD Pipeline with Github Actions. 
-
+This project is using a CI and CD pipeline with Github Actions. 
 Trigger: 
-- Automaticly Run on every Push on Main/Default Branch. 
-- Manuell Run on Main/Default Brnach aviable. 
+- Automatically runs on every push to Main/Default branch. 
+- Manual run on Main/Default branch available. 
 
 Description: 
-This Pipeline loggin to your V-Server. After login, thie Pipeline run a docker compose build. 
+This pipeline logs in to your VServer. After login, the pipeline runs a docker compose build. 
 
 Secret Keys: 
-For Use the CI/CD Pipeline on your own Cloned Repository,you need the following Secret Keys on your Github Repo Settings: 
+To use the CI/CD pipeline on your own cloned repository, you need the following secret keys in your Github Repo Settings: 
 ```bash
       SERVER_IP
       SERVER_PORT
@@ -82,25 +68,21 @@ For Use the CI/CD Pipeline on your own Cloned Repository,you need the following 
       DJANGO_PW 
       DJANGO_EMAIL
       DJANGO_USER 
-      
 ```
-Example Secret Keys are from our Environment Files. 
-
+Example secret keys are from our environment files. 
 ### Description Fullstack Project 
-This is a Fullstack Web Application with Github Submodules. 
-Here you can see, the Root Github Repository. 
-
-To Change to Frontend or Backend use the Links: 
+This is a fullstack web application with Github submodules. 
+Here you can see the root Github repository. 
+To change to frontend or backend use the links: 
 - <a href="https://github.com/HerzogElias/conduit-frontend/">Frontend</a>
 - <a href="https://github.com/HerzogElias/conduit-backend/">Backend</a>
-
 ### Stop Docker Container 
-To Stop the Container use the following Command: 
+To stop the container use the following command: 
 ```bash
 docker compose down 
 ```
 ### Delete Docker Container 
-To Deleate the Docker Container inklusive all Networks and Volumes use the following Command: 
+To delete the Docker container including all networks and volumes use the following command: 
 ```bash
 docker compose down -v
 ```
