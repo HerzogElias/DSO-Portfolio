@@ -68,5 +68,9 @@ In this Section we learn to install nginx on a V Server and create a alternative
     ```
     5. Take your HTML Code into this file. 
     6. Save and Close this file. 
-    7. Open your new Website on `<your_ip>:8081`
+    7. Open your new Website on 
+        ```bash
+        your_ip>:8081
+        ```
+
 
