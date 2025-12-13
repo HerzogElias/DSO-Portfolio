@@ -95,3 +95,12 @@ ul {
     padding: 42px 20px;
   }
 }
+
+
+@media screen and (min-width: 1421px) {
+    .contact {
+        /* calculation: (100% - 1420px) / 2 = 50% - 710px */
+        padding: 64px max(80px, calc(50% - 710px));
+    }
+}
+
