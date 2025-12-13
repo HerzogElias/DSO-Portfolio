@@ -14,8 +14,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 42px 20px;
     color: #FFFFFF;
+    margin: 0 auto;
 }
 
 .title {
@@ -221,7 +221,6 @@
 
     .respCard {
         background: #2E4563;
-        padding: 1.5rem;
         color: #FFFFFF;
         display: flex;
         flex-direction: column;
@@ -317,6 +316,7 @@
         height: auto;
     }
 }
+
 
 @media screen and (min-width: 1421px) {
     .projectsSection {

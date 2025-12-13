@@ -14,6 +14,7 @@
   max-width: 1420px;
   width: 100%;
   text-align: start;
+  margin: 0 auto;
 }
 
 .contactWhyMe,
@@ -89,10 +90,6 @@ ul {
   .contactContainer {
     flex-direction: column;
     gap: 30px;
-  }
-
-  .contact {
-    padding: 42px 20px;
   }
 }
 

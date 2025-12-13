@@ -26,9 +26,10 @@ export default function MySkills({ skills = [] }: ISkillsProps) {
   return (
     <section id="skills" className={styles.mySkills}>
       <div className={styles.innerContent}>
-        <h2 className={styles.titleMedium} >MY SKILLS</h2>
+
 
         <div className={styles.skillContent}>
+          <h2 className={styles.titleMedium} >MY SKILLS</h2>
           {skills.map((skill) => (
             <div
               key={skill.label}
