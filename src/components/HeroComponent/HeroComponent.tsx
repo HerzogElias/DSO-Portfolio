@@ -5,7 +5,7 @@ import HeaderNavbar from "../../components/HeaderComponent/HeaderComponent";
 export default function HeroComponent() {
   return (
     <section className={styles.section} id="about">
-      <HeaderNavbar />
+        <HeaderNavbar />
       <div className={styles.hero}>
         <div className={styles.heroContent}>
           <div className={styles.heroMyprofile}>

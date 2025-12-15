@@ -14,7 +14,7 @@
   max-width: 1420px;
   width: 100%;
   text-align: start;
-  margin: 0 auto;
+ padding: 0 120px;
 }
 
 .contactWhyMe,
@@ -44,7 +44,7 @@ ul {
   letter-spacing: 0%;
   margin-top: 25px;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: start;
 }
 
 .aContact {
