@@ -18,13 +18,12 @@
     justify-content: space-between;
     align-items: center;
     flex: 1;
-    padding: 0 120px;
     width: 100%;
 }
 
 .heroContent {
     display: flex;
-    gap: auto;
+    gap: 2rem;
     justify-content: space-around;
     max-width: 1420px; 
 }
@@ -129,10 +128,4 @@
     }
 }
 
-@media screen and (min-width: 1421px) {
-    .section {
-        /* calculation: (100% - 1420px) / 2 = 50% - 710px */
-        padding: 64px max(80px, calc(50% - 710px));
-    }
-}
 
