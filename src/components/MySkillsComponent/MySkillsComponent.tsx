@@ -52,7 +52,7 @@ export default function MySkills({ skills = [] }: ISkillsProps) {
 
               {hoveredSkill === skill && (
                 <div className={styles.hoverDescriptionBox}>
-                  <h3>How I used this skills</h3>
+                  <h3 className={styles.titleHover}>How I used this skills</h3>
                   <ul>
                     {skill.descriptions.map((desc, i) => (
                       <li key={i}>{desc}</li>
