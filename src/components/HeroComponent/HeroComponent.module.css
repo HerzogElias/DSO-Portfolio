@@ -26,6 +26,7 @@
     gap: 2rem;
     justify-content: space-around;
     max-width: 1420px; 
+    width: 100%;
 }
 
 .heroMyprofile {
@@ -127,5 +128,3 @@
         font-size: 36px;
     }
 }
-
-
