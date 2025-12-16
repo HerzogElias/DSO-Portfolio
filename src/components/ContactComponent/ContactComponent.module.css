@@ -71,6 +71,10 @@ ul {
   gap: 15vw; 
 }
 
+.aContact:hover{
+  color: #FFFFFF;
+}
+
 @media screen and (max-width: 1230px) {
   .titleMedium {
     font-size: 36px;
