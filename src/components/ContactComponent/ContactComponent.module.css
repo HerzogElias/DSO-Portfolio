@@ -68,7 +68,7 @@ ul {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 15vw; 
+  gap: 28vw;
 }
 
 .aContact:hover{
