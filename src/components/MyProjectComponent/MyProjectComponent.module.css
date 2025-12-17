@@ -144,6 +144,7 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    max-width: 400px;
 }
 
 .projectLinks {
@@ -186,10 +187,14 @@
 
 .descriptionSpan {
     display: inline-block;
-    height: 70px;
+    max-height: 70px;
+    max-width: 100%;
     color: #FFFFFF !important;
+    overflow: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
-
 .projectResponsive {
     display: none;
 }
