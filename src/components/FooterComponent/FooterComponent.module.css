@@ -17,6 +17,7 @@
 .Footer {
     display: flex;
     flex-direction: column;
+    margin-top: 16px;
 }
 
 .contactContactRoutes {
@@ -39,6 +40,27 @@
 }
 
 
+@media screen and (max-width: 700px) {
+    .img{
+        width: 36px;
+        height: 90px;
+    }
+
+    .spanCopyright{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .img{
+        width: 32px;
+        height: 80px;
+    }
+
+    .spanCopyright{
+        font-size: 24px;
+    }
+}
 @media screen and (min-width: 1421px) {
     .contact {
         /* calculation: (100% - 1420px) / 2 = 50% - 710px */

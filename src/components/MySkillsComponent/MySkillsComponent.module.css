@@ -14,7 +14,7 @@
   color: white;
   max-width: 1420px;
   width: 100%;
-  padding: 0 120px; /* <<< DAS ist der Schlüssel */
+  padding: 0 120px;
 }
 
 .titleMedium {
@@ -29,9 +29,9 @@
   letter-spacing: 0%;
   text-align: start;
   max-width: 1420px;
-    margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
-  
+
 }
 
 .skillContent {
@@ -42,7 +42,7 @@
   gap: 16px;
   margin-top: 2rem;
   width: 100%;
-  
+
 }
 
 .skillDetail {
@@ -111,28 +111,40 @@
   line-height: 1.4;
 }
 
-.titleHover{
+.titleHover {
   text-align: start;
 }
+
 .mobileSkillContent {
   display: none;
+}
+
+@media screen and (max-width: 1450px) {
+  .innerContent{
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
 }
 
 @media screen and (max-width: 1230px) {
   .titleMedium {
     font-size: 36px;
   }
+
   .skillDetailImg {
     width: 60px;
     height: 60px;
   }
+
   .skillDetail {
     width: 300px;
     height: 190px;
   }
+
   .hoverDescriptionBox {
     padding: 12px;
   }
+
   .hoverDescriptionBox ul {
     font-size: 13px;
   }
@@ -155,20 +167,24 @@
     width: 400px;
     margin-top: 2rem;
   }
+
   .content {
     display: flex;
     flex-direction: column;
     gap: 22px;
   }
+
   .skillDetailMobile {
     width: 280px;
     height: 150px;
     display: flex;
   }
+
   .skillDetailImg {
     width: 70px;
     height: 70px;
   }
+
   .paginationDots {
     display: flex;
     justify-content: center;
@@ -177,6 +193,7 @@
     margin-top: 10px;
     padding: 10px;
   }
+
   .dot {
     width: 14px;
     height: 14px;
@@ -185,12 +202,14 @@
     cursor: pointer;
     transition: all 0.25s ease;
   }
+
   .activeDot {
     background-color: #ffffff;
     opacity: 1;
     transform: scale(1.25);
     box-shadow: 0 0 4px rgba(255, 255, 255, 0.8), 0 0 6px rgba(255, 255, 255, 0.4);
   }
+
   ul {
     width: 80%;
   }
@@ -200,11 +219,19 @@
   .mobileSkillContent {
     width: 100%;
   }
+
+  ul {
+    font-size: 16px;
+  }
+
+  .innerContent {
+    padding: 0 10px;
+  }
 }
 
 @media screen and (min-width: 1421px) {
-    .mySkills {
-        /* calculation: (100% - 1420px) / 2 = 50% - 710px */
-        padding: 64px max(80px, calc(50% - 710px));
-    }
+  .mySkills {
+    /* calculation: (100% - 1420px) / 2 = 50% - 710px */
+    padding: 64px max(80px, calc(50% - 710px));
+  }
 }

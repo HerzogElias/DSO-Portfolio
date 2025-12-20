@@ -20,8 +20,6 @@ export default function Footer() {
                 <Link to="/" className={styles.link}>
                     Home
                 </Link>
-
-
             </div>
         </section>
     );

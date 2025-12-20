@@ -4,7 +4,7 @@
    justify-content: center;  
    align-items: center;     
    width: 100%;
-   min-height: 100vh;
+height: 100vh;
    background-color: #262E34;
 }
 
@@ -16,7 +16,6 @@
 
 .imprint-card {
   width: 100%;
-  min-height: 1000px;
   text-align: start;
   display: flex;
   flex-direction: column;
@@ -79,3 +78,4 @@
   letter-spacing: 0%;
   color: #FFFFFF;
 }
+

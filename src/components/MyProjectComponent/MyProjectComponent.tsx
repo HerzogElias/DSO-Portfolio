@@ -88,6 +88,9 @@ export default function MyProjects({ projects, title }: IProjectsProps) {
         <h2 className={styles.title}>{title}</h2>
         {projects.map((project, index) => (
           <div key={project.label} className={styles.respCard}>
+            <div className={styles.respContent}>
+
+            
             <h3 className={styles.respTitle}>
               {index + 1}. {project.label}
             </h3>
@@ -115,6 +118,7 @@ export default function MyProjects({ projects, title }: IProjectsProps) {
                 </a>
               )}
             </div>
+          </div>
           </div>
         ))}
         <a href="docs/projects/baby-tools" target="_blank">
