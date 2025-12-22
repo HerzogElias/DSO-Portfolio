@@ -103,7 +103,6 @@ export default function Render() {
 />
 
       <MyProjects
-        title="My Projects"
         projects={[
           {
             label: "Minecraft",

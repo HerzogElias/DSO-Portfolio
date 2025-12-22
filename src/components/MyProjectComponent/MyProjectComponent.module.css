@@ -51,13 +51,13 @@
 .projectList li {
     font-size: 24px;
     cursor: pointer;
-    transition: 0.25s ease;
     font-size: Quicksand;
 }
 
 .projectList li:hover {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(164, 9, 9, 0.15);
     transform: translateX(6px);
+    width: 150px;
 }
 
 .active {
@@ -129,7 +129,7 @@
 
 .oben {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 

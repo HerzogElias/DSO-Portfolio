@@ -18,17 +18,16 @@ export interface IProjectElement {
 
 export interface IProjectsProps {
   projects: IProjectElement[];
-  title: string;
 }
 
-export default function MyProjects({ projects, title }: IProjectsProps) {
+export default function MyProjects({ projects}: IProjectsProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const activeProject = projects[activeIndex];
 
   return (
     <section className={styles.projectsSection} id="projects">
       <div className={styles.projectContent}>
-        <h2 className={styles.title}>{title}</h2>
+        <h2 className={styles.title}>My project highlights</h2>
         <div className={styles.wrapper}>
           <nav className={styles.projectList}>
             <ul>
@@ -85,7 +84,7 @@ export default function MyProjects({ projects, title }: IProjectsProps) {
       </div>
 
       <div className={styles.projectResponsive}>
-        <h2 className={styles.title}>{title}</h2>
+        <h2 className={styles.title}>My project heighligts</h2>
         {projects.map((project, index) => (
           <div key={project.label} className={styles.respCard}>
             <div className={styles.respContent}>
