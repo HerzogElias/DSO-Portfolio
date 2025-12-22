@@ -30,7 +30,7 @@ export default function MySkills({ skills = [] }: ISkillsProps) {
   return (
     <section id="skills" className={styles.mySkills}>
       <div className={styles.innerContent}>
-        {/* DESKTOP */}  
+     
         <h2 className={styles.titleMedium}>My skills</h2>
         <div className={styles.skillContent}>
         
@@ -64,7 +64,6 @@ export default function MySkills({ skills = [] }: ISkillsProps) {
           ))}
         </div>
 
-        {/* MOBILE */}
         <div className={styles.mobileSkillContent}>
           <div className={styles.content}>
             {visibleSkills.map((skill) => (

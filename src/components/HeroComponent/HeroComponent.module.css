@@ -24,7 +24,7 @@
 .heroContent {
     display: flex;
     gap: 2rem;
-    justify-content: space-around; /*Mihai hatte das auf space betwwen umgeändert */ 
+    justify-content: space-around;
      max-width: 1420px; 
     width: 100%;
 }
