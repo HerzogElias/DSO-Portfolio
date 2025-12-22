@@ -31,7 +31,7 @@ export default function MySkills({ skills = [] }: ISkillsProps) {
     <section id="skills" className={styles.mySkills}>
       <div className={styles.innerContent}>
         {/* DESKTOP */}  
-        <h2 className={styles.titleMedium}>MY SKILLS</h2>
+        <h2 className={styles.titleMedium}>My skills</h2>
         <div className={styles.skillContent}>
         
 

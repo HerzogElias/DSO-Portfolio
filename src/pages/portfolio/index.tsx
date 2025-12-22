@@ -158,7 +158,7 @@ export default function Render() {
             },
           ]
           }
-          title="My Projects"
+          title="My project highlights"
         />
         <Contact></Contact>
         <Footer></Footer>

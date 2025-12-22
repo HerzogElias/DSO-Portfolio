@@ -9,15 +9,16 @@
 .navElement {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 61px;
     position: sticky;
     top: 0;
+    padding: 0 120px;
 }
 
 .aLink {
     font-family: Quicksand;
     font-weight: 600;
-    font-style: SemiBold;
+    font-style: normal;
     font-size: 24px;
     line-height: 120%;
     letter-spacing: 0%;
@@ -100,12 +101,5 @@
 
     .aLink:hover  {
         color: #266AD9 !important;
-    }
-}
-
-@media screen and (min-width: 1421px) {
-    .header {
-        /* calculation: (100% - 1420px) / 2 = 50% - 710px */
-        padding: 64px max(80px, calc(50% - 710px));
     }
 }
