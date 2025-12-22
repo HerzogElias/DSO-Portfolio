@@ -296,6 +296,14 @@
 @media (max-width: 1230px) {
     .title{
         font-size: 32px;
+        margin-bottom: 16px;
+    }
+}
+
+
+@media (max-width: 890px) {
+    .title{
+        font-size: 32px;
         margin-bottom: 0;
         background-color: #266AD9;
     }
