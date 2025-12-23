@@ -47,7 +47,12 @@
     }
 
     .spanCopyright{
-        font-size: 32px;
+        font-size: 28px;
+    }
+
+    .contactContactRoutes{
+        align-items: center;
+        margin-bottom: 55px;
     }
 }
 

@@ -5,7 +5,7 @@ import HeaderNavbar from "../../components/HeaderComponent/HeaderComponent";
 export default function HeroComponent() {
   return (
     <section className={styles.section} id="about">
-        <HeaderNavbar />
+      <HeaderNavbar />
       <div className={styles.hero}>
         <div className={styles.heroContent}>
           <div className={styles.heroMyprofile}>
@@ -41,9 +41,11 @@ export default function HeroComponent() {
               specialization in DevSecOps.
             </p>
 
-            <a href="#contact">
-              <button className={styles.button}>Contact me</button>
-            </a>
+            <div className={styles.respButton}>
+              <a href="#contact">
+                <button className={styles.button}>Contact me</button>
+              </a>
+            </div>
 
           </div>
 

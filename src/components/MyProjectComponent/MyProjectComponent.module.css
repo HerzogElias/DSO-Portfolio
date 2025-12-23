@@ -14,7 +14,7 @@
     flex-direction: column;
     align-items: center;
     color: #FFFFFF;
-     padding: 32px 120px;
+     padding: 16px 120px;
 }
 
 .title {
@@ -316,6 +316,7 @@
 
     .respCard {
         padding: 0 24px;
+        width: 100vw;
     }
 
     .respContent {
@@ -325,5 +326,9 @@
 
     .respSeeMoreButton{
         width: 95%;
+    }
+
+    .respTags{
+        gap: 10px;
     }
 }

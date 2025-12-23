@@ -4,6 +4,7 @@ import styles from "./MySkillsComponent.module.css";
 export interface ISkillElement {
   label: string;
   imagePath: string;
+  imagePathRespo:string;
   descriptions: string[];
 }
 
@@ -72,7 +73,7 @@ export default function MySkills({ skills = [] }: ISkillsProps) {
                 className={styles.skillDetailMobile}
               >
                 <img
-                  src={skill.imagePath || ""}
+                  src={skill.imagePathRespo || ""}
                   alt={skill.label || ""}
                   className={styles.skillDetailImg}
                 />
@@ -85,7 +86,10 @@ export default function MySkills({ skills = [] }: ISkillsProps) {
             ))}
           </div>
 
-          <div className={styles.paginationDots}>
+ 
+        </div>
+
+                 <div className={styles.paginationDots}>
             {Array.from({ length: totalPages }).map(
               (_, pageIndex) => (
                 <div
@@ -100,7 +104,6 @@ export default function MySkills({ skills = [] }: ISkillsProps) {
               )
             )}
           </div>
-        </div>
       </div>
     </section>
   );

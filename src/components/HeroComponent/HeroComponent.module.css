@@ -25,7 +25,7 @@
     display: flex;
     gap: 2rem;
     justify-content: space-around;
-     max-width: 1420px; 
+    max-width: 1420px;
     width: 100%;
 }
 
@@ -64,7 +64,7 @@
     max-width: 500px;
 }
 
-.images{
+.images {
     width: 300px;
     height: auto;
     border-radius: 12px;
@@ -88,7 +88,7 @@
     transition: all 0.3s ease;
 }
 
-.button:hover{
+.button:hover {
     transform: scale(1.05);
 }
 
@@ -120,14 +120,39 @@
         flex-direction: column;
         justify-content: flex-start;
     }
+
+
+    .respButton {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button {
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .titleBig {
         font-size: 36px;
+        font-weight: 700;
     }
 
-    .pLine{
+    .titleSmall {
+        font-size: 20px;
+        font-weight: 400;
+
+    }
+
+    .titleMedium {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 100%;
+    }
+
+    .pLine {
         font-size: 24px;
     }
 }

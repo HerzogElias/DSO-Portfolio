@@ -144,11 +144,6 @@
   }
 }
 
-@media screen and (max-width: 900px) {
-  .skillContent {
-    gap: 12px;
-  }
-}
 
 @media screen and (max-width: 700px) {
   .skillContent {
@@ -163,21 +158,21 @@
     background-color: #253445;
     color: #FFFFFF;
     border-radius: 10px;
-    height: 700px;
+    height: 600px;
     width: 400px;
-    margin-top: 2rem;
+    padding: 16px 8px 16px 12px;
   }
 
   .content {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 15px;
   }
 
   .skillDetailMobile {
-    width: 280px;
     height: 150px;
     display: flex;
+    align-items: center;
   }
 
   .skillDetailImg {

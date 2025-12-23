@@ -25,7 +25,7 @@
     color: #FFFFFF;
 }
 
-.aLink:hover{
+.aLink:hover {
     color: #FFFFFF !important;
 }
 
@@ -39,45 +39,50 @@
         display: none;
     }
 
-    .navElement{
+    .navElement {
         display: flex;
         flex-direction: column;
+        gap: 24px;
     }
+
     .navbarRespo {
         display: flex;
         flex-direction: column;
-        height: 50px;
+        align-items: flex-end;
+        padding-top: 12px;
+        width: 100%;
     }
 
     .navLine {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         flex-direction: column;
-        position: absolute;
-        top:0;
         cursor: pointer;
+        width: 100%;
     }
 
     .navbarOpen {
         display: flex;
         flex-direction: column;
+        align-items: center;
         background-color: #FFFFFF;
         color: black;
-        width: 100vw;;
+        width: 100%;
+        position: absolute;
+        top: 0;
     }
 
     .navCloseImage {
         width: 30px;
         cursor: pointer;
-        z-index: 9999;
     }
 
     .navbarOpen a {
         color: #266AD9 !important;
     }
 
-    .aLink:hover  {
+    .aLink:hover {
         color: #266AD9 !important;
     }
 }
