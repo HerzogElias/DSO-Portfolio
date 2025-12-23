@@ -158,7 +158,6 @@ export default function Render() {
             },
           ]
           }
-          title="My project highlights"
         />
         <Contact></Contact>
         <Footer></Footer>
