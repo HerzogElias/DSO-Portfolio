@@ -56,14 +56,11 @@
 
 .projectList li:hover {
     background: rgba(164, 9, 9, 0.15);
-    transform: translateX(6px);
-    width: 150px;
 }
 
 .active {
     color: #262E34;
     font-weight: 600;
-    transform: translateX(6px);
 }
 
 .projectLinks {
