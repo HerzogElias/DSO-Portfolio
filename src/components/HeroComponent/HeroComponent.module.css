@@ -12,7 +12,6 @@
     align-self: stretch;
 }
 
-
 .hero {
     display: flex;
     justify-content: space-between;
@@ -153,6 +152,10 @@
     }
 
     .pLine {
-        font-size: 24px;
+        font-size: 16px;
+    }
+
+    .images{
+        width: 200px;
     }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.module.css";
 import HeroComponent from "@site/src/components/HeroComponent/HeroComponent";
+import HeaderRespoNavbar from "../components/HeaderRespoComponent/HeaderRespoComponent";
 import MySkills from "@site/src/components/MySkillsComponent/MySkillsComponent";
 import MyProjects from "@site/src/components/MyProjectComponent/MyProjectComponent";
 import Contact from "@site/src/components/ContactComponent/ContactComponent";
@@ -10,7 +11,9 @@ export default function Render() {
   return (
     <section className="about-me">
       <div className="hero-section">
+       <HeaderRespoNavbar />       
         <div className="content">
+          
           <HeroComponent />
         </div>
       </div>

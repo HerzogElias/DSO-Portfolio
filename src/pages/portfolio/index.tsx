@@ -1,24 +1,26 @@
 import React from "react";
 import "./index.css";
 import HeroComponent from "@site/src/components/HeroComponent/HeroComponent";
+import HeaderRespoNavbar from "@site/src/components/HeaderRespoComponent/HeaderRespoComponent";
 import MySkills from "@site/src/components/MySkillsComponent/MySkillsComponent";
 import MyProjects from "@site/src/components/MyProjectComponent/MyProjectComponent";
 import Contact from "@site/src/components/ContactComponent/ContactComponent";
 import Footer from "@site/src/components/FooterComponent/FooterComponent";
 
-
 export default function Render() {
   return (
     <section className="about-me">
+  
       <div className="hero-section">
+        
         <div className="content">
+           <HeaderRespoNavbar />
           <HeroComponent />
+             
         </div>
       </div>
 
       <div className="about-me">
-
-
         <MySkills
           skills={[
             {
@@ -140,7 +142,6 @@ export default function Render() {
                 { label: "IT Secturity", imagePath: "img/projects/ITSec.png" },
               ],
             },
-            ,
             {
               label: "Wordpress",
               imagePath: "img/projects/projects/Wordpress.png",
@@ -165,13 +166,11 @@ export default function Render() {
                 { label: "CD", imagePath: "img/projects/CD.png" },
               ],
             },
-          ]
-          }
+          ]}
         />
-        <Contact></Contact>
-        <Footer></Footer>
+        <Contact />
+        <Footer />
       </div>
-
     </section>
   );
 }
