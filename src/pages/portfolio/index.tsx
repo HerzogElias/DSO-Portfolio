@@ -10,13 +10,13 @@ import Footer from "@site/src/components/FooterComponent/FooterComponent";
 export default function Render() {
   return (
     <section className="about-me">
-  
+
       <div className="hero-section">
-        
+
         <div className="content">
-           <HeaderRespoNavbar />
+          <HeaderRespoNavbar />
           <HeroComponent />
-             
+
         </div>
       </div>
 

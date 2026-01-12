@@ -1,4 +1,3 @@
-
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
@@ -15,10 +14,10 @@ const config: Config = {
   favicon: 'img/foto_elias.png',
 
   // Set the production url of your site here
-  url: process.env.DEPLOYMENT_URL ?? "https://herzogelias.github.io",
+  url: "https://devsecops-knowledgebase.elias-herzog.de",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: process.env.BASE_URL ?? "/",
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
