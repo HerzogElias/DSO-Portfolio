@@ -46,7 +46,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/HerzogElias/DSO-Portfolio/',
+            'https://devsecops-knowledgebase.elias-herzog.de',
         },
         blog: blogEnabled ? 
           {
@@ -58,7 +58,7 @@ const config: Config = {
             // Please change this to your repo.
             // Remove this to remove the "edit this page" links.
             editUrl:
-              'https://github.com/HerzogElias/DSO-Portfolio/',
+              'https://devsecops-knowledgebase.elias-herzog.de',
             // Useful options to enforce blogging best practices
             onInlineTags: 'warn',
             onInlineAuthors: 'warn',
@@ -89,7 +89,7 @@ const config: Config = {
           label: 'Docs',
         },
         {
-          href: 'https://github.com/HerzogElias/DSO-Portfolio/',
+          href: 'https://devsecops-knowledgebase.elias-herzog.de',
           label: 'Github',
           position: 'right',
         },
