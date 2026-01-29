@@ -1,0 +1,88 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 32px;
+    height: 29px;
+}
+
+.navElement {
+    display: flex;
+    align-items: center;
+    gap: 61px;
+    position: sticky;
+    top: 0;
+    padding: 0 20px;
+}
+
+.aLink {
+    font-family: Quicksand;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+.aLink:hover {
+    color: #FFFFFF !important;
+}
+
+.navLine {
+    display: none;
+}
+
+
+@media screen and (max-width: 1230px) {
+    .header {
+        display: none;
+    }
+
+    .navElement {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .navbarRespo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 12px;
+        width: 100%;
+    }
+
+    .navLine {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .navbarOpen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #FFFFFF;
+        color: black;
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    .navCloseImage {
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .navbarOpen a {
+        color: #266AD9 !important;
+    }
+
+    .aLink:hover {
+        color: #266AD9 !important;
+    }
+}

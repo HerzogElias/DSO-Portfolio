@@ -1,0 +1,53 @@
+ .navbarRespo {
+    display: none;
+ }
+
+@media screen and (max-width: 1230px) {
+    .navbarRespo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 12px;
+        width: 100%;
+    }
+
+    .navLine {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        cursor: pointer;
+        width: 100%;
+        padding: 24px;
+    }
+
+    .navbarOpen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #FFFFFF;
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    .navElement{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .navCloseImage {
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .navbarOpen a {
+        color: #266AD9 !important;
+        font-size: 24px;
+    }
+
+    .aLink:hover {
+        color: #266AD9 !important;
+    }
+}

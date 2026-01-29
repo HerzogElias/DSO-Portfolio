@@ -1,0 +1,226 @@
+.mySkills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #262E34;
+  width: 100%;
+}
+
+.innerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  max-width: 1420px;
+  width: 100%;
+  padding: 32px 120px;
+}
+
+.titleMedium {
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  color: #FFFFFF !important;
+  font-family: Quicksand;
+  font-style: Bold;
+  font-size: 64px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: start;
+  max-width: 1420px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 0;
+
+}
+
+.skillContent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 2rem;
+  width: 100%;
+
+}
+
+.skillDetail {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #91C9F31A;
+  gap: 1rem;
+  border: 1px solid #91C9F3;
+  border-radius: 30px;
+  padding: 42px 71px;
+  width: 376px;
+  height: 200px;
+}
+
+.skillDetailImg {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.skillName {
+  font-family: 'Reddit Sans';
+  color: #FFFFFF !important;
+  font-size: 18px;
+}
+
+.hoverDescriptionBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #507399;
+  color: #FFFFFF;
+  padding: 16px;
+  border-radius: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.skillDetail:hover .hoverDescriptionBox {
+  opacity: 1;
+}
+
+.hoverDescriptionBox ul {
+  list-style: disc;
+  padding-left: 18px;
+  margin: 0;
+  text-align: start;
+  width: 100%;
+  font-size: 14px;
+}
+
+.hoverDescriptionBox li {
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.titleHover {
+  text-align: start;
+}
+
+.mobileSkillContent {
+  display: none;
+}
+
+@media screen and (max-width: 1230px) {
+  .titleMedium {
+    font-size: 36px;
+  }
+
+  .skillDetailImg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .skillDetail {
+    width: 300px;
+    height: 190px;
+  }
+
+  .hoverDescriptionBox {
+    padding: 12px;
+  }
+
+  .hoverDescriptionBox ul {
+    font-size: 13px;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .skillContent {
+    display: none;
+  }
+
+  .mobileSkillContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #253445;
+    color: #FFFFFF;
+    border-radius: 10px;
+    height: 600px;
+    width: 400px;
+    padding: 16px 8px 16px 12px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .skillDetailMobile {
+    height: 150px;
+    display: flex;
+    align-items: center;
+  }
+
+  .skillDetailImg {
+    width: 70px;
+    height: 70px;
+  }
+
+  .paginationDots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #68727E;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+
+  .activeDot {
+    background-color: #ffffff;
+    opacity: 1;
+    transform: scale(1.25);
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.8), 0 0 6px rgba(255, 255, 255, 0.4);
+  }
+
+  ul {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mobileSkillContent {
+    width: 100%;
+  }
+
+  ul {
+    font-size: 16px;
+  }
+
+  .innerContent {
+    padding: 0 10px;
+  }
+}
